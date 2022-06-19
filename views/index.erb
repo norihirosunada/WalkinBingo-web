@@ -2,8 +2,69 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>タイトル</title>
+	<title>WalkinBingo</title>
 </head>
 <body>
+	<form method="post" action="/scan" enctype="multipart/form-data">
+		<input type="file" name="picture" accept="image/*" require>
+		<input type="submit" value="送信する">
+	</form>
+	<video id="camera" width="300" height="200"></video>
+	<canvas id="picture" width="300" height="200"></canvas>
+	<form>
+	  <button type="button" id="shutter">シャッター</button>
+	</form>
+	
+	<audio id="se" preload="auto">
+	  <source src="camera-shutter1.mp3" type="audio/mp3">
+	</audio>
+	
+	<script>
+	window.onload = () => {
+	  const video  = document.querySelector("#camera");
+	  const canvas = document.querySelector("#picture");
+	
+	  /** カメラ設定 */
+	  const constraints = {
+	    audio: false,
+	    video: {
+	      width: 300,
+	      height: 200,
+	      facingMode: "user"   // フロントカメラを利用する
+	      // facingMode: { exact: "environment" }  // リアカメラを利用する場合
+	    }
+	  };
+	
+	  /**
+	   * カメラを<video>と同期
+	   */
+	  navigator.mediaDevices.getUserMedia(constraints)
+	  .then( (stream) => {
+	    video.srcObject = stream;
+	    video.onloadedmetadata = (e) => {
+	      video.play();
+	    };
+	  })
+	  .catch( (err) => {
+	    console.log(err.name + ": " + err.message);
+	  });
+	
+	  /**
+	   * シャッターボタン
+	   */
+	   document.querySelector("#shutter").addEventListener("click", () => {
+	    const ctx = canvas.getContext("2d");
+	
+	    // 演出的な目的で一度映像を止める
+	    video.pause();  // 映像を停止
+	    setTimeout( () => {
+	      video.play();    // 0.5秒後にカメラ再開
+	    }, 500);
+	
+	    // canvasに画像を貼り付ける
+	    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+	  });
+	};
+	</script>
 </body>
 </html>
