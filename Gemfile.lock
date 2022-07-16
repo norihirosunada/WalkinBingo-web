@@ -1,17 +1,49 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
     debase (0.2.4.1)
       debase-ruby_core_source (>= 0.10.2)
     debase-ruby_core_source (0.10.16)
+    declarative (0.0.20)
+    dotenv (2.7.6)
+    faraday (2.3.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.3)
     fastri (0.3.1.1)
+    google-apis-core (0.6.0)
+      addressable (~> 2.5, >= 2.5.1)
+      googleauth (>= 0.16.2, < 2.a)
+      httpclient (>= 2.8.1, < 3.a)
+      mini_mime (~> 1.0)
+      representable (~> 3.0)
+      retriable (>= 2.0, < 4.a)
+      rexml
+      webrick
+    google-apis-vision_v1 (0.13.0)
+      google-apis-core (>= 0.5, < 2.a)
+    googleauth (1.1.3)
+      faraday (>= 0.17.3, < 3.a)
+      jwt (>= 1.4, < 3.0)
+      memoist (~> 0.16)
+      multi_json (~> 1.11)
+      os (>= 0.9, < 2.0)
+      signet (>= 0.16, < 2.a)
+    httpclient (2.8.3)
+    jwt (2.4.1)
+    memoist (0.16.2)
+    mini_mime (1.1.2)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    os (1.1.4)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
+    public_suffix (4.0.7)
     rack (2.2.3.1)
     rack-protection (2.2.0)
       rack
@@ -19,6 +51,11 @@ GEM
     rake (13.0.6)
     rcodetools (0.8.5.0)
     regexp_parser (2.5.0)
+    representable (3.2.0)
+      declarative (< 0.1.0)
+      trailblazer-option (>= 0.1.1, < 0.2.0)
+      uber (< 0.2.0)
+    retriable (3.1.2)
     rexml (3.2.5)
     rubocop (1.30.1)
       parallel (~> 1.10)
@@ -35,6 +72,11 @@ GEM
       rake (>= 0.8.1)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
+    signet (0.16.1)
+      addressable (~> 2.8)
+      faraday (>= 0.17.5, < 3.0)
+      jwt (>= 1.5, < 3.0)
+      multi_json (~> 1.10)
     sinatra (2.2.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -47,6 +89,8 @@ GEM
       sinatra (= 2.2.0)
       tilt (~> 2.0)
     tilt (2.0.10)
+    trailblazer-option (0.1.2)
+    uber (0.1.0)
     unicode-display_width (2.1.0)
     webrick (1.7.0)
 
@@ -55,7 +99,9 @@ PLATFORMS
 
 DEPENDENCIES
   debase
+  dotenv
   fastri
+  google-apis-vision_v1
   rcodetools
   rubocop
   ruby-debug-ide

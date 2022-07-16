@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'sinatra', '~> 2.1'
 gem 'sinatra-contrib', '~> 2.1'
 gem 'webrick', '~> 1.7'
+gem 'google-apis-vision_v1'
+gem "dotenv"
 
 group :development do
   gem 'debase'
