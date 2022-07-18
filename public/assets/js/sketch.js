@@ -1,4 +1,4 @@
-let pieces = [];
+let pieces = new Array(9);
 let pictureWindow;
 
 let p1;
@@ -27,33 +27,45 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(windowWidth, windowHeight*2);
-  canvas.parent('canvas');
-  background(220);
-  let size = width/3;
+  noCanvas();
+	
+  let size = bingoCard.width/3;
   
-  for(i=0; i<3; i++) {
-    for(j=0; j<3; j++) {
-      p1 = new Piece(j*size, i*size, size, size, test_subjects[i*3+j]);
-      pieces[i*3+j] = p1;
-    }
+  for(let i=0; i < pieces.length; i++) {
+    const boxDiv = select("#box"+i);
+  	let box = createGraphics(boxDiv.width, boxDiv.height);
+  	box.parent(boxDiv);
+  	box.show();
+    pieces[i] = new Piece(box, test_subjects[i]);
+    // box.child(pieces[i]);
   }
   
-  a = createGraphics(100, 100);
-  // a.mousePressed(aaa);
-  a.background(100);
-  image(a, 300, 300);
+  // a = createGraphics(100, 100);
+  // // a.mousePressed(aaa);
+  // a.background(100);
+  // image(a, 300, 300);
   
-  pictureWindow = new PictureWindow(0, windowHeight, width, windowHeight);
-  // pictureWindow.center();
-  
+  const cameraDiv = select("#cameraDiv");
+// 	let bingoCard = createGraphics(cameraCanvas.width, cameraCanvas.height);
   capture = createCapture(constraints, function(stream) {
     console.log(stream);
   });
   capture.hide();
   console.log(classes);
   
+  let videoGraphic = createGraphics(cameraDiv.width, cameraDiv.height);
+  videoGraphic.parent(cameraDiv);
+  videoGraphic.show();
+  pictureWindow = new PictureWindow(videoGraphic);
+  // pictureWindow.center();
+  
   classifier = ml5.imageClassifier('MobileNet', capture, modelReady);
+  
+  const flipButton = select("#flipButton");
+  flipButton.mousePressed(flipCamera);
+  
+  const shutterButton = select("#shutterButton");
+  shutterButton.mousePressed(pictureWindow.getPicture);
   
 //   button = createButton('click me');
 //   button.position(width/2 - button.width/2, 500);
@@ -68,13 +80,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
-  
-  for(i=0; i<3; i++) {
-    for(j=0; j<3; j++) {
-      pieces[i*3+j].display();
-    }
-  }
+  pieces.forEach(piece => piece.display());
   pictureWindow.display();
 }
 
@@ -143,30 +149,29 @@ function gotResult(error, results) {
 }
 
 class Piece {
-  constructor(x, y, width, height, word){
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  constructor(canvas, word){
+    this.canvas = canvas;
+    this.x = 0;
+    this.y = 0;
+    this.width = canvas.width;
+    this.height = canvas.height;
     this.word = word;
     
     this.bg = createGraphics(200, 200);
     this.bg.stroke(40);
     this.bg.fill(255);
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
-    // this.bg.mousePressed(aaa);
     
-//     this.picture;
-    
+    this.canvas.textAlign(CENTER);
   }
   
   display() {
-    image(this.bg, this.x, this.y, this.width, this.height);    
+    this.canvas.image(this.bg, this.x, this.y, this.width, this.height);    
     
     if(this.picture) {
-      image(this.picture, this.x, this.y, 200, 200, this.posX, this.posY, this.dWidth, this.dWidth);
+      this.canvas.image(this.picture, this.x, this.y, 200, 200, this.posX, this.posY, this.dWidth, this.dWidth);
     }
-    text(this.word, this.x + this.width/2, this.y + this.height/2);
+    this.canvas.text(this.word, this.x + this.width/2, this.y + this.height/2);
   }
   
   get picture() {
@@ -187,11 +192,12 @@ class Piece {
 }
 
 class PictureWindow {
-  constructor(x, y, width, height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  constructor(canvas) {
+    this.canvas = canvas;
+    this.x = 0;
+    this.y = 0;
+    this.width = canvas.width;
+    this.height = canvas.height;
     this.found = 'searching...';
     
     this.bg = createGraphics(this.width, this.height);
@@ -202,32 +208,33 @@ class PictureWindow {
     
     this.uiPosY = (this.height - this.width)/2 + this.width + windowHeight;
     
-    this.flipButton = createButton("flip");
-    this.flipButton.position(width/2 - this.flipButton.width/2 + 100, this.uiPosY - this.flipButton.height/2);
-    this.flipButton.mousePressed(flipCamera);
+    // this.flipButton = createButton("flip");
+    // this.flipButton.position(width/2 - this.flipButton.width/2 + 100, this.uiPosY - this.flipButton.height/2);
+    // this.flipButton.mousePressed(flipCamera);
     
-    this.shutterButton = createButton("◉");
-    this.shutterButton.position(width/2 - this.shutterButton.width/2, this.uiPosY - this.shutterButton.height/2);
-    this.shutterButton.mousePressed(this.getPicture);
+    // this.shutterButton = createButton("◉");
+    // this.shutterButton.position(width/2 - this.shutterButton.width/2, this.uiPosY - this.shutterButton.height/2);
+    // this.shutterButton.mousePressed(this.getPicture);
     
     // this.h1 = createElement('h1', 'searching...');
     // this.h1.style('text-align', 'center');
     // this.h1.position(0, this.uiPosY);
     // this.h1.size(width, AUTO);
     // this.h1.center();
-    
-    textSize(24);
-    textAlign(CENTER);
+    this.canvas.fill(200);
+    this.canvas.textSize(24);
+    this.canvas.textAlign(CENTER);
   }
   
   display() {
-    // image(this.bg, this.x, this.y);
     // image(capture, this.x + 6, this.y + 6, this.width - 12, this.width-12, 80, 0, this.capture.size().width*2, this.capture.size().height*2);
-    // image(capture, this.x, this.y, );
     this.setDisplayPos();
-    image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
+    this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
+    // this.canvas.image(capture, 0, 0);
 
-    text(this.found, width/2, this.uiPosY - 40);
+    this.canvas.text(this.found, this.width/2, this.uiPosY - 40);
+
+    this.canvas.text("hoge", this.width/2, this.height/2);
   }
   
   setDisplayPos() {
