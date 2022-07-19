@@ -4,71 +4,102 @@
 	<meta charset="UTF-8">
 	<title>WalkinBingo</title>
 </head>
-<body>
-	<!--<form method="post" action="/scan" enctype="multipart/form-data">-->
-	<!--	<input type="file" name="picture" accept="image/*" require>-->
-	<!--	<input type="submit" value="送信する">-->
-	<!--</form>-->
-	<!--<video id="camera" width="300" height="200"></video>-->
-	<!--<canvas id="picture" width="300" height="200"></canvas>-->
-	<!--<form>-->
-	<!--	<button type="button" id="shutter">シャッター</button>-->
-	<!--</form>-->
-	
-	<div class="main container-sm bg-white text-dark">
+<body class="text-center">
+	<div class="scrollspy-example"
+				data-bs-spy="scroll"
+			  data-bs-target="#navbar"
+			  data-bs-offset="0"
+			  tabindex="0">
 		<!--<div class="ratio ratio-1x1" id="bingoDiv"></div>-->
-		<div class="bingo p-1">
+		<div class="bingo p-1 cover-container d-flex vw-100 vh-100 p-3 mx-auto flex-column bg-white text-dark" id="bingoDiv">
+			<h1 class="float-md-start mb-3">Find!</h1>
 			<div class="row ">
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box0">
+					<div class="ratio ratio-1x1 border" id="box0">
 					</div>
 				</div>
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box1">
+					<div class="ratio ratio-1x1 border" id="box1">
 					</div>
 				</div>
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box2">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box3">
-					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box4">
-					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box5">
+					<div class="ratio ratio-1x1 border" id="box2">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box6">
+					<div class="ratio ratio-1x1 border" id="box3">
 					</div>
 				</div>
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box7">
+					<div class="ratio ratio-1x1 border" id="box4">
 					</div>
 				</div>
 				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1" id="box8">
+					<div class="ratio ratio-1x1 border" id="box5">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col g-0 m-1">
+					<div class="ratio ratio-1x1 border" id="box6">
+					</div>
+				</div>
+				<div class="col g-0 m-1">
+					<div class="ratio ratio-1x1 border" id="box7">
+					</div>
+				</div>
+				<div class="col g-0 m-1">
+					<div class="ratio ratio-1x1 border" id="box8">
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<div class="cameraPage cover-container d-flex vw-100 vh-100 mx-auto flex-column bg-dark text-white" id="cameraPage">
+			<header class="p-3">
+				<h1 class="float-md-start mb-3">Scan!</h1>
+			</header>
+			<div class="ratio ratio-1x1 w-100" id="cameraDiv"></div>
+			<div class="p-3 my-auto">
+				<h3 id="labelText"></h3>
+				<div class="row justify-content-end">
+			    <div class="col-4">
+			      <button type="button" class="btn btn-outline-light btn-lg" id="shutterButton">
+							<span class="material-symbols-outlined align-middle">circle</span>
+						</button>
+			    </div>
+			    <div class="col-4">
+						<button type="button" class="btn btn-outline-light btn-lg" id="flipButton">
+							<span class="material-symbols-outlined align-middle">cameraswitch</span>
+						</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
 	</div>
-	
-	<div class="cameraPage container-sm bg-dark text-white">
-		<div class="ratio ratio-1x1" id="cameraDiv"></div>
-		<button type="button" class="btn btn-primary" id="flipButton">FlipCamera</button>
-		<button type="button" class="btn btn-primary" id="shutterButton">Shutter</button>
-	</div>
-	
+
+	<nav class="navbar navbar-expand-sm fixed-bottom nav-pills nav-fill navbar-light bg-light">
+	  <div class="container-fluid justify-content-center">
+			<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link" href="#bingoDiv">
+						<span class="material-symbols-outlined">
+							task_alt
+						</span>
+					</a>
+				</li>
+			  <li class="nav-item">
+					<a class="nav-link" href="#cameraPage">
+						<span class="material-symbols-outlined align-middle">
+							image_search
+						</span>
+					</a>
+				</li>
+			</ul>
+	  </div>
+	</nav>	
 	<script src="/assets/js/sketch.js"></script>
 
 </body>

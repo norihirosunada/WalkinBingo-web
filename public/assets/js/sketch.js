@@ -40,13 +40,7 @@ function setup() {
     // box.child(pieces[i]);
   }
   
-  // a = createGraphics(100, 100);
-  // // a.mousePressed(aaa);
-  // a.background(100);
-  // image(a, 300, 300);
-  
   const cameraDiv = select("#cameraDiv");
-// 	let bingoCard = createGraphics(cameraCanvas.width, cameraCanvas.height);
   capture = createCapture(constraints, function(stream) {
     console.log(stream);
   });
@@ -66,17 +60,6 @@ function setup() {
   
   const shutterButton = select("#shutterButton");
   shutterButton.mousePressed(pictureWindow.getPicture);
-  
-//   button = createButton('click me');
-//   button.position(width/2 - button.width/2, 500);
-//   // button.mousePressed(takePicture);
-  
-//   button2 = createButton('save');
-//   button2.position(width/2 - button2.width/2 + 100, 500);
-//   button2.mousePressed(_ => {
-//     // saveCanvas(a);
-//     console.log(pictureWindow.getPicture());
-//   });
 }
 
 function draw() {
@@ -139,13 +122,11 @@ function gotResult(error, results) {
   capture = createCapture(constraints);
   capture.hide();
   
-  for(i=0; i<3; i++) {
-    for(j=0; j<3; j++) {
-      if(pieces[i*3+j].word == split(results[0].label, ',')[0]) {
-        pieces[i*3+j].picture = img;
+  pieces.forEach(piece => {
+    if(piece.word == split(results[0].label, ',')[0]) {
+        piece.picture = img;
       }
-    }
-  }
+  });
 }
 
 class Piece {
@@ -166,7 +147,7 @@ class Piece {
   }
   
   display() {
-    this.canvas.image(this.bg, this.x, this.y, this.width, this.height);    
+    // this.canvas.image(this.bg, this.x, this.y, this.width, this.height);
     
     if(this.picture) {
       this.canvas.image(this.picture, this.x, this.y, 200, 200, this.posX, this.posY, this.dWidth, this.dWidth);
@@ -206,15 +187,7 @@ class PictureWindow {
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
     // this.bg.mousePressed(aaa);
     
-    this.uiPosY = (this.height - this.width)/2 + this.width + windowHeight;
-    
-    // this.flipButton = createButton("flip");
-    // this.flipButton.position(width/2 - this.flipButton.width/2 + 100, this.uiPosY - this.flipButton.height/2);
-    // this.flipButton.mousePressed(flipCamera);
-    
-    // this.shutterButton = createButton("◉");
-    // this.shutterButton.position(width/2 - this.shutterButton.width/2, this.uiPosY - this.shutterButton.height/2);
-    // this.shutterButton.mousePressed(this.getPicture);
+    // this.uiPosY = (this.height - this.width)/2 + this.width + windowHeight;
     
     // this.h1 = createElement('h1', 'searching...');
     // this.h1.style('text-align', 'center');
@@ -232,9 +205,9 @@ class PictureWindow {
     this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
     // this.canvas.image(capture, 0, 0);
 
-    this.canvas.text(this.found, this.width/2, this.uiPosY - 40);
+    // this.canvas.text(this.found, this.width/2, this.uiPosY - 40);
 
-    this.canvas.text("hoge", this.width/2, this.height/2);
+    // this.canvas.text("hoge", this.width/2, this.height/2);
   }
   
   setDisplayPos() {
