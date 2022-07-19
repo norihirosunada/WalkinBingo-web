@@ -1,8 +1,8 @@
 let pieces = new Array(9);
 let pictureWindow;
 
-let p1;
 let bingoCard = [];
+let resultText, scoreText;
 
 let capture;
 let facingUser = true;
@@ -60,6 +60,9 @@ function setup() {
   
   const shutterButton = select("#shutterButton");
   shutterButton.mousePressed(pictureWindow.getPicture);
+  
+  resultText = select("#resultText");
+  scoreText = select("#scoreText");
 }
 
 function draw() {
@@ -126,6 +129,17 @@ function gotResult(error, results) {
     if(piece.word == split(results[0].label, ',')[0]) {
         piece.picture = img;
       }
+  });
+  
+  // ビンゴ判定
+  console.table(pieces);
+  const lines = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
+  lines.forEach(indices => {
+    const line = pieces.filter((_, index) => indices.includes(index));
+    if(line.every(piece => piece.picture !== undefined)) {
+      console.log("Bingo"+indices);
+      resultText.html("Bingo!")
+    }
   });
 }
 
