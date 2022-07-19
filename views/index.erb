@@ -13,59 +13,64 @@
 		<!--<div class="ratio ratio-1x1" id="bingoDiv"></div>-->
 		<div class="bingo p-1 cover-container d-flex vw-100 vh-100 p-3 mx-auto flex-column bg-white text-dark" id="bingoDiv">
 			<h1 class="float-md-start mb-3" id="resultText">Find!</h1>
-			<div class="row ">
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box0">
+			<div id="bingoCard">
+				<div class="row ">
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box0">
+						</div>
+					</div>
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box1">
+						</div>
+					</div>
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box2">
+						</div>
 					</div>
 				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box1">
+				<div class="row">
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box3">
+						</div>
+					</div>
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box4">
+						</div>
+					</div>
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box5">
+						</div>
 					</div>
 				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box2">
+				<div class="row">
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box6">
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box3">
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box7">
+						</div>
 					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box4">
-					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box5">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box6">
-					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box7">
-					</div>
-				</div>
-				<div class="col g-0 m-1">
-					<div class="ratio ratio-1x1 border" id="box8">
+					<div class="col g-0 m-1">
+						<div class="ratio ratio-1x1 border" id="box8">
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="p-3 my-auto">
 				<h2 class="" id="scoreText">Score: 0</h1>
-				<div class="row justify-content-center">
+				<a hidden href="" id="download"></a>
+				<div class="row justify-content-end">
 			    <div class="col-4">
 			    	<a class="nav-link btn btn-outline-dark btn-lg" role="button" href="#cameraPage">
 							<span class="material-symbols-outlined align-middle">image_search</span>
 						</a>
-			   <!--   <button type="button" class="btn btn-outline-dark btn-lg" href="#cameraPage">-->
-						<!--	<span class="material-symbols-outlined align-middle">image_search</span>-->
-						<!--</button>-->
 			    </div>
+			    <div class="col-4">
+						<button type="button" class="btn btn-outline-dark btn-lg" id="shareButton">
+							<span class="material-symbols-outlined align-middle">share</span>
+						</button>
+					</div>
 			  </div>
 			</div>
 		</div>
@@ -103,6 +108,36 @@
 	</nav>	
 
 	<script src="/assets/js/sketch.js"></script>
-
+	<script>
+		$("#shareButton").on('click', function() {
+			html2canvas(document.querySelector("#bingoCard"), {
+				}).then(canvas => {
+    		canvas.toBlob(blob => {
+		      // $("#download").attr("download", `${document.title}.png`).attr("href", window.URL.createObjectURL(blob));
+		      // $('a#download')[0].click();
+		      const imageFile = new File([blob], "image.png", { type: "image/png", });
+		      try {
+				    await navigator.share({
+					    text: "WalkinBingo",
+					    // url: "",
+					    files: [imageFile],
+					  });
+				    resultPara.textContent = 'MDN shared successfully'
+				  } catch(err) {
+				    resultPara.textContent = 'Error: ' + e
+				  }
+			  	// navigator.share({
+				  //   text: "共有テスト",
+				  //   url: "",
+				  //   files: [imageFile],
+				  // }).then(() => {
+				  //   console.log("共有成功.");
+				  // }).catch((error) => {
+				  //   console.log(error);
+				  // });
+		  	});
+    	});
+		});
+	</script>
 </body>
 </html>
