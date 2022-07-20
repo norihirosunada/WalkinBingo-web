@@ -116,25 +116,25 @@
 		      // $("#download").attr("download", `${document.title}.png`).attr("href", window.URL.createObjectURL(blob));
 		      // $('a#download')[0].click();
 		      const imageFile = new File([blob], "image.png", { type: "image/png", });
-		      try {
-				    await navigator.share({
-					    text: "WalkinBingo",
-					    // url: "",
-					    files: [imageFile],
-					  });
-				    resultPara.textContent = 'MDN shared successfully'
-				  } catch(err) {
-				    resultPara.textContent = 'Error: ' + e
-				  }
-			  	// navigator.share({
-				  //   text: "共有テスト",
-				  //   url: "",
-				  //   files: [imageFile],
-				  // }).then(() => {
-				  //   console.log("共有成功.");
-				  // }).catch((error) => {
-				  //   console.log(error);
-				  // });
+		    //   try {
+				  //   await navigator.share({
+					 //   text: "WalkinBingo",
+					 //   // url: "",
+					 //   files: [imageFile],
+					 // });
+				  //   resultPara.textContent = 'MDN shared successfully'
+				  // } catch(err) {
+				  //   resultPara.textContent = 'Error: ' + e
+				  // }
+			  	navigator.share({
+				    text: "共有テスト",
+				    url: "",
+				    files: [imageFile],
+				  }).then(() => {
+				    console.log("共有成功.");
+				  }).catch((error) => {
+				    console.log(error);
+				  });
 		  	});
     	});
 		});
