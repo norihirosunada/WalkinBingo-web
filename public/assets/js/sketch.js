@@ -6,9 +6,17 @@ let resultText, scoreText;
 
 let capture;
 let facingUser = true;
-let constraints = {
+const userConstraints = {
   video: {
     facingMode: 'user'
+  },
+  audio: false
+};
+const envConstraints = {
+  video: {
+    facingMode: {
+    exact: 'environment'
+    }
   },
   audio: false
 };
@@ -29,6 +37,10 @@ function preload() {
 }
 
 function setup() {
+  // スマホ・PC判定
+  // TODO: NavigatorUADataがSafariでも使えるようになったらいいね
+  console.log(`isMobile: ${isMobile()}`);
+  
   noCanvas();
 	
   let size = bingoCard.width/3;
@@ -44,7 +56,7 @@ function setup() {
   }
   
   const cameraDiv = select("#cameraDiv");
-  capture = createCapture(constraints, function(stream) {
+  capture = createCapture(isMobile() ? envConstraints : userConstraints, function(stream) {
     console.log(stream);
   });
   capture.hide();
@@ -67,6 +79,10 @@ function setup() {
   resultText = select("#resultText");
   scoreText = select("#scoreText");
   
+  if (isMobile) {
+    flipButton.removeAttribute("hidden");
+  }
+  
   // classifyResultModal = select("#classifyResultModal");
   // classifyResultModal.shown.bs.modal(function() {
 		// 	console.log("modal shown hoge");
@@ -76,6 +92,24 @@ function setup() {
 function draw() {
   pieces.forEach(piece => piece.display());
   pictureWindow.display();
+}
+
+function isMobile(){
+  var md = new MobileDetect(window.navigator.userAgent);
+  return md.mobile() != null
+}
+
+function listMediaDevices() {
+	navigator.mediaDevices.enumerateDevices()
+  .then(function(devices) {
+    devices.forEach(function(device) {
+      console.log(device.kind + ": " + device.label +
+                  " id = " + device.deviceId);
+    });
+  })
+  .catch(function(err) {
+    console.log(err.name + ": " + err.message);
+  });
 }
 
 function flipCamera() {
