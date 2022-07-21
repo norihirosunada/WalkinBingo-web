@@ -58,6 +58,8 @@ function setup() {
   const cameraDiv = select("#cameraDiv");
   capture = createCapture(isMobile() ? envConstraints : userConstraints, function(stream) {
     console.log(stream);
+    console.log(`capture:`);
+    console.log(capture);
   });
   capture.hide();
   console.log(classes);
@@ -80,7 +82,7 @@ function setup() {
   scoreText = select("#scoreText");
   
   if (isMobile) {
-    flipButton.removeAttribute("hidden");
+    flipButton.removeAttribute("disabled");
   }
   
   // classifyResultModal = select("#classifyResultModal");
@@ -254,11 +256,6 @@ class PictureWindow {
     this.bg.fill(255);
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
     
-    // this.h1 = createElement('h1', 'searching...');
-    // this.h1.style('text-align', 'center');
-    // this.h1.position(0, this.uiPosY);
-    // this.h1.size(width, AUTO);
-    // this.h1.center();
     this.canvas.fill(200);
     this.canvas.textSize(24);
     this.canvas.textAlign(CENTER);
@@ -269,10 +266,6 @@ class PictureWindow {
     this.setDisplayPos();
     this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
     // this.canvas.image(capture, 0, 0);
-
-    // this.canvas.text(this.found, this.width/2, this.uiPosY - 40);
-
-    // this.canvas.text("hoge", this.width/2, this.height/2);
   }
   
   setDisplayPos() {
