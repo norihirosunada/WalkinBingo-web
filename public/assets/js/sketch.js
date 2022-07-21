@@ -43,7 +43,7 @@ function setup() {
   
   noCanvas();
 	
-  let size = bingoCard.width/3;
+  // let size = bingoCard.width/3;
   
   for(let i=0; i < pieces.length; i++) {
     const boxDiv = select("#box"+i);
@@ -98,7 +98,7 @@ function draw() {
 
 function isMobile(){
   var md = new MobileDetect(window.navigator.userAgent);
-  return md.mobile() != null
+  return md.mobile() != null;
 }
 
 function listMediaDevices() {
@@ -186,7 +186,7 @@ function gotResult(error, results) {
     const line = pieces.filter((_, index) => indices.includes(index));
     if(line.every(piece => piece.picture !== undefined)) {
       console.log("Bingo"+indices);
-      resultText.html("Bingo!")
+      resultText.html("Bingo!");
     }
   });
 }
