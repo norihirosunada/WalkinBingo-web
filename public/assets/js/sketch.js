@@ -14,7 +14,9 @@ let constraints = {
 };
 
 let img;
+let foundLabel;
 let classifier;
+let includeLabel = false;
 
 const classes = ["acoustic guitar", "airship", "ambulance", "analog clock", "bakery, bakeshop, bakehouse", "balloon", "ballpoint, ballpoint pen, ballpen, Biro", "Band Aid", "baseball", "basketball", "birdhouse", "boathouse", "bookshop, bookstore, bookstall", "bottlecap", "broom", "bullet train, bullet", "butcher shop, meat market", "candle, taper, wax light", "canoe", "castle", "chain", "china cabinet, china closet"];
 
@@ -36,7 +38,8 @@ function setup() {
   	let box = createGraphics(boxDiv.width, boxDiv.height);
   	box.parent(boxDiv);
   	box.show();
-    pieces[i] = new Piece(box, test_subjects[i]);
+  	const isCenter = i == 4;
+    pieces[i] = new Piece(box, test_subjects[i], isCenter);
     // box.child(pieces[i]);
   }
   
@@ -63,6 +66,11 @@ function setup() {
   
   resultText = select("#resultText");
   scoreText = select("#scoreText");
+  
+  // classifyResultModal = select("#classifyResultModal");
+  // classifyResultModal.shown.bs.modal(function() {
+		// 	console.log("modal shown hoge");
+		// });
 }
 
 function draw() {
@@ -101,6 +109,7 @@ function flipCamera() {
 
 function modelReady() {
   console.log('Model Ready');
+  select("#shutterButton").removeAttribute("disabled");
   // classifyVideo();
 }
 
@@ -119,15 +128,18 @@ function gotResult(error, results) {
   if (error) {
     console.error(error);
   }
+  foundLabel = split(results[0].label, ',')[0];
   // The results are in an array ordered by confidence.
   pictureWindow.showResults(results);
   
   capture = createCapture(constraints);
   capture.hide();
   
+  includeLabel = false;
   pieces.forEach(piece => {
     if(piece.word == split(results[0].label, ',')[0]) {
         piece.picture = img;
+        includeLabel = true;
       }
   });
   
@@ -143,14 +155,22 @@ function gotResult(error, results) {
   });
 }
 
+function setModalImage() {
+  const modalImage = select("#modalImage");
+  let modalImageGraphic = createGraphics(modalImage.width, modalImage.height);
+  modalImageGraphic.parent(modalImage);
+  modalImageGraphic.Image(img);
+}
+
 class Piece {
-  constructor(canvas, word){
+  constructor(canvas, word, isCenter){
     this.canvas = canvas;
     this.x = 0;
     this.y = 0;
     this.width = canvas.width;
     this.height = canvas.height;
     this.word = word;
+    this.isCenter = isCenter;
     
     this.bg = createGraphics(200, 200);
     this.bg.stroke(40);
@@ -166,7 +186,7 @@ class Piece {
     if(this.picture) {
       this.canvas.image(this.picture, this.x, this.y, 200, 200, this.posX, this.posY, this.dWidth, this.dWidth);
     }
-    this.canvas.text(this.word, this.x + this.width/2, this.y + this.height/2);
+    this.canvas.text(this.isCenter ? "?" : this.word, this.x + this.width/2, this.y + this.height/2);
   }
   
   get picture() {
@@ -199,9 +219,6 @@ class PictureWindow {
     this.bg.stroke(40);
     this.bg.fill(255);
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
-    // this.bg.mousePressed(aaa);
-    
-    // this.uiPosY = (this.height - this.width)/2 + this.width + windowHeight;
     
     // this.h1 = createElement('h1', 'searching...');
     // this.h1.style('text-align', 'center');

@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<title>WalkinBingo</title>
-</head>
 <body class="text-center">
-	<div class="scrollspy-example"
-				data-bs-spy="scroll"
-			  data-bs-target="#navbar"
-			  data-bs-offset="0"
-			  tabindex="0">
-		<!--<div class="ratio ratio-1x1" id="bingoDiv"></div>-->
-		<div class="bingo p-1 cover-container d-flex vw-100 vh-100 p-3 mx-auto flex-column bg-white text-dark" id="bingoDiv">
-			<h1 class="float-md-start mb-3" id="resultText">Find!</h1>
-			<div id="bingoCard">
+	<div >
+	<!--class="scrollspy-example"-->
+	<!--			data-bs-spy="scroll"-->
+	<!--		  data-bs-target="#navbar"-->
+	<!--		  data-bs-offset="0"-->
+	<!--		  tabindex="0">-->
+		<div class="bingo cover-container d-flex vw-100 vh-100 mx-auto flex-column bg-white text-dark" id="bingoDiv">
+			<header class="p-3">
+				<h1 class="float-md-start mb-3" id="resultText">Find!</h1>
+			</header>
+			<div class="p-3" id="bingoCard">
 				<div class="row ">
 					<div class="col g-0 m-1">
 						<div class="ratio ratio-1x1 border" id="box0">
@@ -58,8 +54,7 @@
 				</div>
 			</div>
 			<div class="p-3 my-auto">
-				<h2 class="" id="scoreText">Score: 0</h1>
-				<a hidden href="" id="download"></a>
+				<!--<h2 class="" id="scoreText">Score: 0</h2>-->
 				<div class="row justify-content-end">
 			    <div class="col-4">
 			    	<a class="nav-link btn btn-outline-dark btn-lg" role="button" href="#cameraPage">
@@ -84,7 +79,8 @@
 				<h3 id="labelText"></h3>
 				<div class="row justify-content-end">
 			    <div class="col-4">
-			      <button type="button" class="btn btn-outline-light btn-lg" id="shutterButton">
+			      <button type="button" class="btn btn-outline-light btn-lg" id="shutterButton" 
+			      data-bs-toggle="modal" data-bs-target="#classifyResultModal" disabled>
 							<span class="material-symbols-outlined align-middle">circle</span>
 						</button>
 			    </div>
@@ -97,35 +93,76 @@
 			</div>
 		</div>
 	</div>
+	
+	<!--Modal-->
+	<div class="modal fade" id="classifyResultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Modal title</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <h6 id="confidenceText">00.00</h6>
+	        <h6 id="includeLabelText">not in card</h6>
+	        <!--<div id="modalImage"></div>-->
+	        <!--<image id="modalImage"></image>-->
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="okButton">OK</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-	<nav class="nav nav-pills nav-justified navbar fixed-bottom navbar-light bg-light text-dark" id="pills-tab" role="tablist">
-		<a class="nav-link" href="#bingoDiv">
-			<span class="material-symbols-outlined align-middle">task_alt</span>
-		</a>
-		<a class="nav-link" href="#cameraPage">
-			<span class="material-symbols-outlined align-middle">image_search</span>
-		</a>
-	</nav>	
+	<!--Bottom Nav Menu-->
+	<!--<nav class="nav nav-pills nav-justified navbar fixed-bottom navbar-light bg-light text-dark" id="pills-tab" role="tablist">-->
+	<!--	<a class="nav-link" href="#bingoDiv">-->
+	<!--		<span class="material-symbols-outlined align-middle">task_alt</span>-->
+	<!--	</a>-->
+	<!--	<a class="nav-link" href="#cameraPage">-->
+	<!--		<span class="material-symbols-outlined align-middle">image_search</span>-->
+	<!--	</a>-->
+	<!--</nav>	-->
 
 	<script src="/assets/js/sketch.js"></script>
 	<script>
+		// モーダル
+		let myModal = document.getElementById('classifyResultModal')
+		myModal.addEventListener('shown.bs.modal', function showResult() {
+			console.log("modal shown");
+			console.log(pictureWindow.results);
+			$(".modal-title").text(`You found ${foundLabel}`);
+			$("#confidenceText").text(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
+			if(includeLabel) {
+				$("#includeLabelText").addClass("d-none");
+				$("#okButton").removeClass("d-none");
+			} else {
+				$("#includeLabelText").removeClass("d-none");
+				$("#okButton").addClass("d-none");
+			}
+			
+		});
+		// myModal.addEventListener('hidden.bs.modal', function () {
+		// 	if
+		// });
+		
+		// TODO: myModal.hide() が動かないので直す
+		$("#okButton").on('click', function() {
+			let myModal = document.getElementById('classifyResultModal');
+			myModal.addEventListener('hidden.bs.modal', function showResult() {
+				console.log("modal hidden");
+				location.href = "#bingoDiv";
+			});
+			// myModal.removeEventListener('hidden.bs.modal', showResult);
+		});
+		// シェア機能
 		$("#shareButton").on('click', function() {
 			html2canvas(document.querySelector("#bingoCard"), {
 				}).then(canvas => {
     		canvas.toBlob(blob => {
-		      // $("#download").attr("download", `${document.title}.png`).attr("href", window.URL.createObjectURL(blob));
-		      // $('a#download')[0].click();
 		      const imageFile = new File([blob], "image.png", { type: "image/png", });
-		    //   try {
-				  //   await navigator.share({
-					 //   text: "WalkinBingo",
-					 //   // url: "",
-					 //   files: [imageFile],
-					 // });
-				  //   resultPara.textContent = 'MDN shared successfully'
-				  // } catch(err) {
-				  //   resultPara.textContent = 'Error: ' + e
-				  // }
 			  	navigator.share({
 				    text: "共有テスト",
 				    url: "",
