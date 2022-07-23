@@ -133,15 +133,15 @@
 		myModal.addEventListener('shown.bs.modal', function showResult() {
 			console.log("modal shown");
 			console.log(pictureWindow.results);
-			$(".modal-title").text(`You found ${foundLabel}`);
-			$("#confidenceText").text(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
-			if(includeLabel) {
-				$("#includeLabelText").addClass("d-none");
-				$("#okButton").removeClass("d-none");
-			} else {
-				$("#includeLabelText").removeClass("d-none");
-				$("#okButton").addClass("d-none");
-			}
+			// $(".modal-title").text(`You found ${foundLabel}`);
+			// $("#confidenceText").text(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
+			// if(includeLabel) {
+			// 	$("#includeLabelText").addClass("d-none");
+			// 	$("#okButton").removeClass("d-none");
+			// } else {
+			// 	$("#includeLabelText").removeClass("d-none");
+			// 	$("#okButton").addClass("d-none");
+			// }
 			
 		});
 		// myModal.addEventListener('hidden.bs.modal', function () {
@@ -155,7 +155,7 @@
 				console.log("modal hidden");
 				location.href = "#bingoDiv";
 			});
-			// myModal.removeEventListener('hidden.bs.modal', showResult);
+			myModal.removeEventListener('hidden.bs.modal', showResult);
 		});
 		// シェア機能
 		$("#shareButton").on('click', function() {

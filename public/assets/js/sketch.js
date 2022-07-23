@@ -6,6 +6,7 @@ let resultText, scoreText;
 
 let capture;
 let facingUser = true;
+let constraints;
 const userConstraints = {
   video: {
     facingMode: 'user'
@@ -56,7 +57,8 @@ function setup() {
   }
   
   const cameraDiv = select("#cameraDiv");
-  capture = createCapture(isMobile() ? envConstraints : userConstraints, function(stream) {
+  constraints = isMobile() ? envConstraints : userConstraints
+  capture = createCapture(constraints, function(stream) {
     console.log(stream);
     console.log(`capture:`);
     console.log(capture);
@@ -105,8 +107,7 @@ function listMediaDevices() {
 	navigator.mediaDevices.enumerateDevices()
   .then(function(devices) {
     devices.forEach(function(device) {
-      console.log(device.kind + ": " + device.label +
-                  " id = " + device.deviceId);
+      console.log(device.kind + ": " + device.label + " id = " + device.deviceId);
     });
   })
   .catch(function(err) {
@@ -128,7 +129,6 @@ function flipCamera() {
      },
      audio: false
    };
-
   } else {
    constraints = {
      video: {
@@ -173,11 +173,21 @@ function gotResult(error, results) {
   
   includeLabel = false;
   pieces.forEach(piece => {
-    if(piece.word == split(results[0].label, ',')[0]) {
+    if(piece.word == foundLabel) {
         piece.picture = img;
         includeLabel = true;
       }
   });
+  
+  select(".modal-title").html(`You found ${foundLabel}`);
+	select("#confidenceText").html(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
+	if(includeLabel) {
+		select("#includeLabelText").addClass("d-none");
+		select("#okButton").removeClass("d-none");
+	} else {
+		select("#includeLabelText").removeClass("d-none");
+		select("#okButton").addClass("d-none");
+	}
   
   // ビンゴ判定
   console.table(pieces);
@@ -259,12 +269,16 @@ class PictureWindow {
     this.canvas.fill(200);
     this.canvas.textSize(24);
     this.canvas.textAlign(CENTER);
+    this.canvas.imageMode(CENTER);
+    this.canvas.translate(this.width/2, this.height/2);
   }
   
   display() {
     // image(capture, this.x + 6, this.y + 6, this.width - 12, this.width-12, 80, 0, this.capture.size().width*2, this.capture.size().height*2);
     this.setDisplayPos();
-    this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
+    this.canvas.image(capture, 0, 0);
+    // this.canvas.image(capture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dHeight);
+    // this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
     // this.canvas.image(capture, 0, 0);
   }
   
