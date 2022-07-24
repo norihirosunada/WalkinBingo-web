@@ -149,13 +149,11 @@ function classifyVideo() {
   classifier.classify(gotResult,1);
 }
 
-// A function to run when we get any errors and the results
 function gotResult(error, results) {
-  // Display error in the console
   if (error) {
     console.error(error);
   }
-  // The results are in an array ordered by confidence.
+  // resultsはconfidence降順
   console.log(results[0].label);
   foundLabel = split(results[0].label, ',')[0];
   
@@ -204,8 +202,6 @@ function setModalImage() {
 class Piece {
   constructor(canvas, word, isCenter){
     this.canvas = canvas;
-    this.x = 0;
-    this.y = 0;
     this.width = canvas.width;
     this.height = canvas.height;
     this.word = word;
@@ -248,8 +244,6 @@ class Piece {
 class PictureWindow {
   constructor(canvas) {
     this.canvas = canvas;
-    this.x = 0;
-    this.y = 0;
     this.width = canvas.width;
     this.height = canvas.height;
     this.found = 'searching...';
@@ -264,12 +258,46 @@ class PictureWindow {
     this.canvas.textAlign(CENTER);
     this.canvas.imageMode(CENTER);
     this.canvas.translate(this.width/2, this.height/2);
+    this.canvas.rectMode(CENTER);
+    
+    this.sqSize = this.width/4;
+    this.dSize = 0;
+    this.a = 0;
   }
   
   display() {
     // this.setDisplayPos();
     this.canvas.image(capture, 0, 0);
     // this.canvas.image(capture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dHeight);
+    
+    // インジケータ　収縮する角丸枠
+    this.a += 0.02;
+    this.dSize = 16 * sin(this.a);
+    push();
+    this.canvas.noFill()
+    this.canvas.stroke(240);
+    this.canvas.strokeWeight(6);
+    // 右下
+    this.canvas.beginShape();
+    this.canvas.vertex(this.sqSize + this.dSize, this.sqSize + this.dSize - 40);
+    this.canvas.quadraticVertex(this.sqSize + this.dSize, this.sqSize + this.dSize, this.sqSize + this.dSize - 40, this.sqSize + this.dSize);
+    this.canvas.endShape();
+    // 左下
+    this.canvas.beginShape();
+    this.canvas.vertex(-this.sqSize - this.dSize, this.sqSize + this.dSize - 40);
+    this.canvas.quadraticVertex(-this.sqSize - this.dSize, this.sqSize + this.dSize, -this.sqSize - this.dSize + 40, this.sqSize + this.dSize);
+    this.canvas.endShape();
+    // 左上
+    this.canvas.beginShape();
+    this.canvas.vertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize + 40);
+    this.canvas.quadraticVertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize, -this.sqSize - this.dSize + 40, -this.sqSize - this.dSize);
+    this.canvas.endShape();
+    // 右上
+    this.canvas.beginShape();
+    this.canvas.vertex(this.sqSize + this.dSize, -this.sqSize - this.dSize + 40);
+    this.canvas.quadraticVertex(this.sqSize + this.dSize, -this.sqSize - this.dSize, this.sqSize + this.dSize - 40, -this.sqSize - this.dSize);
+    this.canvas.endShape();
+    pop();
   }
   
   setDisplayPos() {
@@ -289,6 +317,10 @@ class PictureWindow {
     console.log('Label: ' + results[0].label);
     console.log('Confidence: ' + nf(results[0].confidence, 0, 2));
     this.found = `you found ${split(results[0].label, ',')[0]}`;
+  }
+  
+  indicator(){
+    
   }
 }
 
