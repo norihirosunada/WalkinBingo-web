@@ -1,5 +1,7 @@
 let pieces = new Array(9);
 let pictureWindow;
+const lines = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
+let bingoFlag = new Array(8);
 
 let bingoCard = [];
 let resultText, scoreText;
@@ -162,7 +164,7 @@ function gotResult(error, results) {
   foundLabel = table.findRow(results[0].label, "class").getString("level1_ja");
   let foundLabel_ja = table.findRow(results[0].label, "class").getString("class_split_ja");
   console.log(foundLabel);
-  let confidence = nf(results[0].confidence, 0, 2) * 100;
+  let confidence = round(results[0].confidence * 100);
   
   pictureWindow.showResults(results);
   
@@ -185,13 +187,16 @@ function gotResult(error, results) {
 	}
   
   // ビンゴ判定
-  console.table(pieces);
-  const lines = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
-  lines.forEach(indices => {
+  // 各ビンゴパターンチェック
+  lines.forEach((indices, bingoIndex) => {
+    // ビンゴマス取得
     const line = pieces.filter((_, index) => indices.includes(index));
     if(line.every(piece => piece.picture !== undefined)) {
       console.log("Bingo"+indices);
+      bingoFlag[bingoIndex] = true;
       resultText.html("Bingo!");
+      // let bingo = select("#bingo");
+      // bingo.removeClass("invisible");
     }
   });
 }
