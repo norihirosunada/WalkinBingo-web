@@ -99,12 +99,16 @@
 	  <div class="modal-dialog modal-dialog-centered">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title">Modal title</h5>
+	        <h5 class="modal-title">発見！</h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
-	        <h6 id="confidenceText">00.00</h6>
-	        <h6 id="includeLabelText">not in card</h6>
+	      	<h4 id="foundLabel"></h4>
+	        <!--<h6 id="confidenceText">00.00</h6>-->
+	        <div class="progress">
+					  <div class="progress-bar" id="confidenceBar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+	        <!--<h6 id="includeLabelText">not in card</h6>-->
 	        <!--<div id="modalImage"></div>-->
 	        <!--<image id="modalImage"></image>-->
 	      </div>

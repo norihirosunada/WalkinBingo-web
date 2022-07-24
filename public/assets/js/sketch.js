@@ -64,7 +64,7 @@ function setup() {
   	box.parent(boxDiv);
   	box.show();
   	const isCenter = i == 4;
-    pieces[i] = new Piece(box, test_subjects[i], isCenter);
+    pieces[i] = new Piece(box, subjectsToday[i], isCenter);
     // box.child(pieces[i]);
   }
   
@@ -157,7 +157,12 @@ function gotResult(error, results) {
   }
   // resultsはconfidence降順
   console.log(results[0].label);
-  foundLabel = split(results[0].label, ',')[0];
+  const foundClass = split(results[0].label, ',')[0];
+  // const row = table.findRow(foundClass, "class");
+  foundLabel = table.findRow(results[0].label, "class").getString("level1_ja");
+  let foundLabel_ja = table.findRow(results[0].label, "class").getString("class_split_ja");
+  console.log(foundLabel);
+  let confidence = nf(results[0].confidence, 0, 2) * 100;
   
   pictureWindow.showResults(results);
   
@@ -166,13 +171,16 @@ function gotResult(error, results) {
   
   includeLabel = pieces.some(piece => piece.word == foundLabel);
   
-  select(".modal-title").html(`You found ${foundLabel}`);
-	select("#confidenceText").html(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
+  // select(".modal-title").html(`You found ${foundLabel_ja}`);
+  select("#foundLabel").html(foundLabel_ja);
+	select("#confidenceBar").html(`${confidence}%`);
+  select("#confidenceBar").attribute("aria-valuenow", confidence);
+  select("#confidenceBar").style("width", `${confidence}%`);
 	if(includeLabel) {
-		select("#includeLabelText").addClass("d-none");
+		// select("#includeLabelText").addClass("d-none");
 		select("#okButton").removeClass("d-none");
 	} else {
-		select("#includeLabelText").removeClass("d-none");
+		// select("#includeLabelText").removeClass("d-none");
 		select("#okButton").addClass("d-none");
 	}
   
@@ -215,6 +223,7 @@ class Piece {
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
     
     this.canvas.textAlign(CENTER);
+    this.canvas.textSize(14);
     this.canvas.imageMode(CENTER);
     this.canvas.translate(this.width/2, this.height/2);
   }
