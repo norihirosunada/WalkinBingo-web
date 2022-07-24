@@ -110,7 +110,7 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="okButton">OK</button>
+	        <button type="button" class="btn btn-primary" id="okButton">OK</button>
 	      </div>
 	    </div>
 	  </div>
@@ -130,32 +130,16 @@
 	<script>
 		// モーダル
 		let myModal = document.getElementById('classifyResultModal')
-		myModal.addEventListener('shown.bs.modal', function showResult() {
+		myModal.addEventListener('shown.bs.modal',  function() {
 			console.log("modal shown");
-			console.log(pictureWindow.results);
-			// $(".modal-title").text(`You found ${foundLabel}`);
-			// $("#confidenceText").text(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
-			// if(includeLabel) {
-			// 	$("#includeLabelText").addClass("d-none");
-			// 	$("#okButton").removeClass("d-none");
-			// } else {
-			// 	$("#includeLabelText").removeClass("d-none");
-			// 	$("#okButton").addClass("d-none");
-			// }
-			
+			// console.log(pictureWindow.results);
 		});
-		// myModal.addEventListener('hidden.bs.modal', function () {
-		// 	if
-		// });
-		
-		// TODO: myModal.hide() が動かないので直す
-		$("#okButton").on('click', function() {
-			let myModal = document.getElementById('classifyResultModal');
-			myModal.addEventListener('hidden.bs.modal', function showResult() {
-				console.log("modal hidden");
-				location.href = "#bingoDiv";
-			});
-			myModal.removeEventListener('hidden.bs.modal', showResult);
+		$("#okButton").on('click', function(event) {
+			event.preventDefault();
+			let modal = bootstrap.Modal.getInstance(myModal);
+			modal.hide();
+			setTimeout(() => {location.href = "#bingoDiv"}, 500);
+			setTimeout(() => {setPicture()}, 1000);
 		});
 		// シェア機能
 		$("#shareButton").on('click', function() {

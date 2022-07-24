@@ -1,0 +1,1001 @@
+index,class,class_translate_ja,format_ja,group,group_gtranslate_ja
+0,"tench, Tinca tinca",テンチ、ティンカティンカ,,fish,魚
+1,"goldfish, Carassius auratus",金魚、Carassius auratus,金魚,fish,魚
+2,"great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias",グレートホワイトサメ、ホワイトサメ、マンエーター、人食いサメ、カルカロドンカルチャリアス,,fish,魚
+3,"tiger shark, Galeocerdo cuvieri",タイガー・シャーク、ガレオーコ・クヴィエリ,,fish,魚
+4,"hammerhead, hammerhead shark",ハンマーヘッド、ハンマーヘッドサメ,,fish,魚
+5,"electric ray, crampfish, numbfish, torpedo",電気光線、cr肉、麻痺、魚雷,,fish,魚
+6,stingray,スティングレイ,,fish,魚
+7,cock,コック,鶏,bird,鳥
+8,hen,鶏,鶏,bird,鳥
+9,"ostrich, Struthio camelus",オストリッチ、ストルティオ・カメロス,ダチョウ,bird,鳥
+10,"brambling, Fringilla montifringilla",Brambling、Fringilla Montifringilla,,bird,鳥
+11,"goldfinch, Carduelis carduelis",Goldfinch、carduelis carduelis,,bird,鳥
+12,"house finch, linnet, Carpodacus mexicanus",ハウスフィンチ、リンネット、carpodacus mexicanus,,bird,鳥
+13,"junco, snowbird",Junco、Snowbird,,bird,鳥
+14,"indigo bunting, indigo finch, indigo bird, Passerina cyanea",Indigo Bunting、Indigo Finch、Indigo Bird、Passerina cyanea,,bird,鳥
+15,"robin, American robin, Turdus migratorius",ロビン、アメリカンロビン、Turdus Migratorius,,bird,鳥
+16,bulbul,ブルブル,,bird,鳥
+17,jay,ジェイ,,bird,鳥
+18,magpie,カササギ,,bird,鳥
+19,chickadee,チカディー,,bird,鳥
+20,"water ouzel, dipper",ウォーターウゼル、ディッパー,,bird,鳥
+21,kite,凧,トビ,bird,鳥
+22,"bald eagle, American eagle, Haliaeetus leucocephalus",ハゲイーグル、アメリカンイーグル、ハリエエトゥスロイコチェファルス,,bird,鳥
+23,vulture,ハゲタカ,,bird,鳥
+24,"great grey owl, great gray owl, Strix nebulosa",グレートグレーフクロウ、グレートグレーフクロウ、ストリックスネブロサ,,bird,鳥
+25,"European fire salamander, Salamandra salamandra",ヨーロッパの火災サンショウウオ、サラマンドラ・サラマンドラ,,reptile,爬虫類
+26,"common newt, Triturus vulgaris",一般的なニュート、トリトゥルスvulgaris,,reptile,爬虫類
+27,eft,EFT,イモリ,reptile,爬虫類
+28,"spotted salamander, Ambystoma maculatum",斑点を付けられたサンショウウオ、Ambystoma maculatum,,reptile,爬虫類
+29,"axolotl, mud puppy, Ambystoma mexicanum",Axolotl、Mud Puppy、Ambystoma Mexicanum,,reptile,爬虫類
+30,"bullfrog, Rana catesbeiana",Bullfrog、Rana Catesbeiana,,reptile,爬虫類
+31,"tree frog, tree-frog",ツリーカエル、ツリーフログ,,reptile,爬虫類
+32,"tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui",尾のカエル、ベルヒキガエル、リブ付きヒキガエル、尾のヒキガエル、アスカフストルイ,,reptile,爬虫類
+33,"loggerhead, loggerhead turtle, Caretta caretta",Loggerhead、Loggerhead Turtle、カレッタカレッタ,,reptile,爬虫類
+34,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",レザーバックタートル、レザーバック、革のようなタートル、デルモチェリーズコリアケア,,reptile,爬虫類
+35,mud turtle,泥タートル,,reptile,爬虫類
+36,terrapin,テラピン,,reptile,爬虫類
+37,"box turtle, box tortoise",ボックスタートル、ボックスカメ,,reptile,爬虫類
+38,banded gecko,バンドジェッコ,,reptile,爬虫類
+39,"common iguana, iguana, Iguana iguana",一般的なイグアナ、イグアナ、イグアナイグアナ,イグアナ,reptile,爬虫類
+40,"American chameleon, anole, Anolis carolinensis",アメリカのカメレオン、アノール、アノリス・カロリネンシス,,reptile,爬虫類
+41,"whiptail, whiptail lizard",ホイップテイル、ホイップテイルトカゲ,,reptile,爬虫類
+42,agama,アガマ,,reptile,爬虫類
+43,"frilled lizard, Chlamydosaurus kingi",フリルトカゲ、クラミドサウルスキング,,reptile,爬虫類
+44,alligator lizard,ワニトカゲ,,reptile,爬虫類
+45,"Gila monster, Heloderma suspectum",Gila Monster、Healoderma Sumpectum,,reptile,爬虫類
+46,"green lizard, Lacerta viridis",グリーントカゲ、ラカルタビリディス,,reptile,爬虫類
+47,"African chameleon, Chamaeleo chamaeleon",アフリカのカメレオン、Chamaeleo Chamaeleon,,reptile,爬虫類
+48,"Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",コモド・ドラゴン、コモド・トカゲ、ドラゴン・トカゲ、巨大なトカゲ、ヴァラヌス・コモドエンシス,,reptile,爬虫類
+49,"African crocodile, Nile crocodile, Crocodylus niloticus",アフリカのクロコダイル、ナイルクロコダイル、クロコディルスniloticus,,reptile,爬虫類
+50,"American alligator, Alligator mississipiensis",アメリカのワニ、ワニのミシシピエンシス,,reptile,爬虫類
+51,triceratops,Triceratops,,reptile,爬虫類
+52,"thunder snake, worm snake, Carphophis amoenus",サンダーヘビ、ワームヘビ、カルフォフィスアモエナス,,reptile,爬虫類
+53,"ringneck snake, ring-necked snake, ring snake",リングネックヘビ、リングネックヘビ、リングヘビ,,reptile,爬虫類
+54,"hognose snake, puff adder, sand viper",ホグノースヘビ、パフ加算器、サンドバイパー,,reptile,爬虫類
+55,"green snake, grass snake",緑のヘビ、草ヘビ,,reptile,爬虫類
+56,"king snake, kingsnake",キングスネーク、キングスネーク,,reptile,爬虫類
+57,"garter snake, grass snake",ガーターヘビ、草ヘビ,,reptile,爬虫類
+58,water snake,水ヘビ,,reptile,爬虫類
+59,vine snake,つるヘビ,,reptile,爬虫類
+60,"night snake, Hypsiglena torquata",ナイトヘビ、ハプシグレナトルカタ,,reptile,爬虫類
+61,"boa constrictor, Constrictor constrictor",BoA Constrictor、Constrictor Constrictor,,reptile,爬虫類
+62,"rock python, rock snake, Python sebae",Rock Python、Rock Snake、Python Sebae,,reptile,爬虫類
+63,"Indian cobra, Naja naja",インドのコブラ、ナジャ・ナジャ,,reptile,爬虫類
+64,green mamba,グリーンマンバ,,reptile,爬虫類
+65,sea snake,シーヘビ,,reptile,爬虫類
+66,"horned viper, cerastes, sand viper, horned asp, Cerastes cornutus",角のあるヴァイパー、セラスト、サンドバイパー、角のあるasp、cerastes cornutus,,reptile,爬虫類
+67,"diamondback, diamondback rattlesnake, Crotalus adamanteus",ダイヤモンドバック、ダイヤモンドバックガラガラヘビ、Crotalus adamanteus,,reptile,爬虫類
+68,"sidewinder, horned rattlesnake, Crotalus cerastes",サイドワインダー、角のあるガラガラヘビ、Crotalus cerastes,,reptile,爬虫類
+69,trilobite,三葉虫,,arthropod,節足動物
+70,"harvestman, daddy longlegs, Phalangium opilio",Harvestman、Daddy Longlegs、Phalangium opilio,,arthropod,節足動物
+71,scorpion,サソリ,サソリ,arthropod,節足動物
+72,"black and gold garden spider, Argiope aurantia",ブラックガーデンとゴールドガーデンのクモ、アーガープオーランティア,,arthropod,節足動物
+73,"barn spider, Araneus cavaticus",納屋のスパイダー、アラネウス・カヴァチャス,,arthropod,節足動物
+74,"garden spider, Aranea diademata",ガーデンスパイダー、アラネアディアデマタ,,arthropod,節足動物
+75,"black widow, Latrodectus mactans",ブラック・ウィドウ、ラトロデクトゥス・マクタン,,arthropod,節足動物
+76,tarantula,タランチュラ,タランチュラ,arthropod,節足動物
+77,"wolf spider, hunting spider",オオカミのクモ、ハンティングクモ,,arthropod,節足動物
+78,tick,ティック,,arthropod,節足動物
+79,centipede,ムカデ,ムカデ,arthropod,節足動物
+80,black grouse,黒いライチョウ,,bird,鳥
+81,ptarmigan,雷鳥,雷鳥,bird,鳥
+82,"ruffed grouse, partridge, Bonasa umbellus",Ruffed Grouse、Partridge、Bonasa Umbellus,,bird,鳥
+83,"prairie chicken, prairie grouse, prairie fowl",プレーリーチキン、プレーリーライチョウ、プレーリーファウル,,bird,鳥
+84,peacock,孔雀,孔雀,bird,鳥
+85,quail,ウズラ,ウズラ,bird,鳥
+86,partridge,ヤマウズラ,,bird,鳥
+87,"African grey, African gray, Psittacus erithacus",アフリカングレー、アフリカングレー、erithacus,,bird,鳥
+88,macaw,コンコー,,bird,鳥
+89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",硫黄が押し付けられたオウム、カカトー・ガレリタ、カカトゥア・ガレリタ,,bird,鳥
+90,lorikeet,lorikeet,,bird,鳥
+91,coucal,coucal,,bird,鳥
+92,bee eater,蜂を食べる人,,bird,鳥
+93,hornbill,ホーンビル,,bird,鳥
+94,hummingbird,ハチドリ,ハチドリ,bird,鳥
+95,jacamar,ジャカマー,,bird,鳥
+96,toucan,トゥカン,,bird,鳥
+97,drake,ドレイク,,bird,鳥
+98,"red-breasted merganser, Mergus serrator",赤breasted merganser、メルガスセレーター,,bird,鳥
+99,goose,ガチョウ,ガチョウ,bird,鳥
+100,"black swan, Cygnus atratus",ブラックスワン、Cygnus atratus,,bird,鳥
+101,tusker,タスカー,,,#VALUE!
+102,"echidna, spiny anteater, anteater",Echidna、Spiny Anteater、Anteater,,,#VALUE!
+103,"platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus",カモシカ、アヒル、アヒルのカモシカ、アヒル請求カラマス、ornithorhynchus anatinus,カモシカ,,#VALUE!
+104,"wallaby, brush kangaroo",ワラビー、ブラシカンガルー,ワラビー,,#VALUE!
+105,"koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus",コアラ、コアラベア、カンガルーベア、ネイティブベア、ファスコラトスシネレウス,コアラ,,#VALUE!
+106,wombat,ウォンバット,ウォンバット,,#VALUE!
+107,jelly fish,クラゲ,クラゲ,,#VALUE!
+108,"sea anemone, anemone",シーアネモネ、アネモネ,,,#VALUE!
+109,brain coral,脳のサンゴ,,,#VALUE!
+110,"flatworm, platyhelminth",平らな虫、Platyhelminth,,,#VALUE!
+111,"nematode, nematode worm, roundworm",線虫、線虫ワーム、回虫,,,#VALUE!
+112,conch,巻き貝,巻き貝,,#VALUE!
+113,snail,カタツムリ,カタツムリ,,#VALUE!
+114,slug,ナメクジ,ナメクジ,,#VALUE!
+115,"sea slug, nudibranch",海のナメクジ、ヌディブラン,,,#VALUE!
+116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",チトン、コートオブメールシェル、シークレードル、ポリプラコフォア,,,#VALUE!
+117,"chambered nautilus, pearly nautilus, nautilus",Chambered Nautilus、Peally Nautilus、Nautilus,,,#VALUE!
+118,"Dungeness crab, Cancer magister",ダンジネスクラブ、がんマジスター,,,#VALUE!
+119,"rock crab, Cancer irroratus",岩石、がんの障害,,,#VALUE!
+120,fiddler crab,フィドラークラブ,,,#VALUE!
+121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",キングクラブ、アラスカカニ、アラスカ王カニ、アラスカキングカニ、パラリトデスカムツチャティカ,,,#VALUE!
+122,"American lobster, Northern lobster, Maine lobster, Homarus americanus",アメリカンロブスター、ノーザンロブスター、メインロブスター、ホーマルスamericus,,,#VALUE!
+123,"spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish",とげのあるロブスター、ラングーテ、ロックロブスター、ザリガニ、ザリガニ、ザリガニ,,,#VALUE!
+124,"crayfish, crawfish, crawdad, crawdaddy",ザリガニ、ザリガニ、クローダッド、クローダディ,,,#VALUE!
+125,hermit crab,ヤドカリ,,,#VALUE!
+126,isopod,ISOPOD,,,#VALUE!
+127,"white stork, Ciconia ciconia",ホワイトコウノトリ、シコニアシコニア,,,#VALUE!
+128,"black stork, Ciconia nigra",黒のコウノトリ、シコニア・ニグラ,,,#VALUE!
+129,spoonbill,スプーンビル,,,#VALUE!
+130,flamingo,フラミンゴ,,,#VALUE!
+131,"little blue heron, Egretta caerulea",リトルブルーヘロン、Egretta Caerulea,,,#VALUE!
+132,"American egret, great white heron, Egretta albus",アメリカのユグレット、グレートホワイトヘロン、エグレッタアルバス,,,#VALUE!
+133,bittern,バタン,,,#VALUE!
+134,crane,クレーン,,,#VALUE!
+135,"limpkin, Aramus pictus",リンプキン、アラムス・ピクトス,,,#VALUE!
+136,"European gallinule, Porphyrio porphyrio",ヨーロッパのガリヌール、ポルフィリオポルフィリオ,,,#VALUE!
+137,"American coot, marsh hen, mud hen, water hen, Fulica americana",アメリカンクート、マーシュヘン、マッドヘン、ウォーターヘン、フリカアメリカーナ,,,#VALUE!
+138,bustard,バスタード,,,#VALUE!
+139,"ruddy turnstone, Arenaria interpres",Ruddy Turnstone、Arenaria Interpres,,,#VALUE!
+140,"red-backed sandpiper, dunlin, Erolia alpina",レッドバッキングされたサンドパイパー、ダンリン、エロリアアルピナ,,,#VALUE!
+141,"redshank, Tringa totanus",Redshank、Tringa Totanus,,,#VALUE!
+142,dowitcher,ダウチャー,,,#VALUE!
+143,"oystercatcher, oyster catcher",OysterCatcher、Oyster Catcher,,,#VALUE!
+144,pelican,ペリカン,,,#VALUE!
+145,"king penguin, Aptenodytes patagonica",ペンギン王、パタゴニカaptenodytes,,,#VALUE!
+146,"albatross, mollymawk",アルバトロス、モリモーク,,,#VALUE!
+147,"grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus",灰色のクジラ、灰色のクジラ、デビルフィッシュ、エシュリヒティウス・ギブボサス、エシュリヒティウス・ロブストゥス,,,#VALUE!
+148,"killer whale, killer, orca, grampus, sea wolf, Orcinus orca",キラークジラ、キラー、オルカ、グランプス、シーウルフ、オルシナスオルカ,,,#VALUE!
+149,"dugong, Dugong dugon",Dugong、Dugong Dugon,,,#VALUE!
+150,sea lion,アシカ,,,#VALUE!
+151,Chihuahua,チワワ,チワワ,dog,犬
+152,Japanese spaniel,狆,狆（ちん）,dog,犬
+153,"Maltese dog, Maltese terrier, Maltese",マルタ犬、マルタテリア、マルタ人,マルチーズ,,#VALUE!
+154,"Pekinese, Pekingese, Peke",ペキネーゼ、ペキキーズ、ペク,ペキニーズ,,#VALUE!
+155,Shih-Tzu,シー・ツー,シーズー,,#VALUE!
+156,Blenheim spaniel,ブレナム・スパニエル,,,#VALUE!
+157,papillon,パピヨン,パピヨン,,#VALUE!
+158,toy terrier,おもちゃテリア,,,#VALUE!
+159,Rhodesian ridgeback,ローデシアンリッジバック,,,#VALUE!
+160,"Afghan hound, Afghan",アフガンハウンド、アフガン,,,#VALUE!
+161,"basset, basset hound",バセット、バセットハウンド,,,#VALUE!
+162,beagle,ビーグル,,,#VALUE!
+163,"bloodhound, sleuthhound",ブラッドハウンド、スルーハウンド,,,#VALUE!
+164,bluetick,ブルーティック,,,#VALUE!
+165,black-and-tan coonhound,黒とタンのクーンハウンド,,,#VALUE!
+166,"Walker hound, Walker foxhound",ウォーカーハウンド、ウォーカーフォックスハウンド,,,#VALUE!
+167,English foxhound,英語のフォックスハウンド,,,#VALUE!
+168,redbone,レッドボーン,,,#VALUE!
+169,"borzoi, Russian wolfhound",ボルゾイ、ロシアのウルフハウンド,,,#VALUE!
+170,Irish wolfhound,アイリッシュウルフハウンド,,,#VALUE!
+171,Italian greyhound,イタリアのグレイハウンド,,,#VALUE!
+172,whippet,ホイペット,,,#VALUE!
+173,"Ibizan hound, Ibizan Podenco",イビザン・ハウンド、イビザン・ポデンコ,,,#VALUE!
+174,"Norwegian elkhound, elkhound",ノルウェーのエルクハウンド、エルクハウンド,,,#VALUE!
+175,"otterhound, otter hound",オッテルハウンド、オッターハウンド,,,#VALUE!
+176,"Saluki, gazelle hound",サルキ、ガゼルハウンド,,,#VALUE!
+177,"Scottish deerhound, deerhound",スコットランドディアハウンド、ディアハウンド,,,#VALUE!
+178,Weimaraner,ワイマラナー,,,#VALUE!
+179,"Staffordshire bullterrier, Staffordshire bull terrier",スタッフォードシャーブルテリア、スタッフォードシャーブルテリア,,,#VALUE!
+180,"American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",アメリカンスタッフォードシャーテリア、スタッフォードシャーテリア、アメリカンピットブルテリア、ピットブルテリア,,,#VALUE!
+181,Bedlington terrier,ベッドリントンテリア,,,#VALUE!
+182,Border terrier,ボーダーテリア,,,#VALUE!
+183,Kerry blue terrier,ケリーブルーテリア,,,#VALUE!
+184,Irish terrier,アイルランドのテリア,,,#VALUE!
+185,Norfolk terrier,ノーフォークテリア,,,#VALUE!
+186,Norwich terrier,ノリッジテリア,,,#VALUE!
+187,Yorkshire terrier,ヨークシャーテリア,,,#VALUE!
+188,wire-haired fox terrier,ワイヤーヘアのフォックステリア,,,#VALUE!
+189,Lakeland terrier,レイクランドテリア,,,#VALUE!
+190,"Sealyham terrier, Sealyham",シーリーハムテリア、シーリーハム,,,#VALUE!
+191,"Airedale, Airedale terrier",エアデール、エアデールテリア,,,#VALUE!
+192,"cairn, cairn terrier",ケアン、ケアンテリア,,,#VALUE!
+193,Australian terrier,オーストラリアのテリア,,,#VALUE!
+194,"Dandie Dinmont, Dandie Dinmont terrier",ダンディ・ディンモント、ダンディ・ディンモント・テリア,,,#VALUE!
+195,"Boston bull, Boston terrier",ボストンブル、ボストンテリア,,,#VALUE!
+196,miniature schnauzer,ミニチュアシュナウザー,,,#VALUE!
+197,giant schnauzer,巨大シュナウザー,,,#VALUE!
+198,standard schnauzer,標準シュナウザー,,,#VALUE!
+199,"Scotch terrier, Scottish terrier, Scottie",スコッチテリア、スコットランドテリア、スコッティ,,,#VALUE!
+200,"Tibetan terrier, chrysanthemum dog",チベット・テリア、菊犬,,,#VALUE!
+201,"silky terrier, Sydney silky",シルキーテリア、シドニーシルキー,,,#VALUE!
+202,soft-coated wheaten terrier,ソフトコーティングされたウィートテリア,,,#VALUE!
+203,West Highland white terrier,ウェストハイランドホワイトテリア,,,#VALUE!
+204,"Lhasa, Lhasa apso",Lhasa、Lhasa Apso,,,#VALUE!
+205,flat-coated retriever,フラットコーティングレトリバー,,,#VALUE!
+206,curly-coated retriever,カーリーコーティングレトリバー,,,#VALUE!
+207,golden retriever,ゴールデンレトリバー,,,#VALUE!
+208,Labrador retriever,ラブラドール・レトリバー,,,#VALUE!
+209,Chesapeake Bay retriever,チェサピークベイレトリバー,,,#VALUE!
+210,German short-haired pointer,ドイツの短毛のポインター,,,#VALUE!
+211,"vizsla, Hungarian pointer",ヴィズラ、ハンガリーのポインター,,,#VALUE!
+212,English setter,英語のセッター,,,#VALUE!
+213,"Irish setter, red setter",アイリッシュセッター、レッドセッター,,,#VALUE!
+214,Gordon setter,ゴードンセッター,,,#VALUE!
+215,Brittany spaniel,ブリタニー・スパニエル,,,#VALUE!
+216,"clumber, clumber spaniel",クランバー、クランバースパニエル,,,#VALUE!
+217,"English springer, English springer spaniel",イングリッシュスプリンガー、イングリッシュスプリンガースパニエル,,,#VALUE!
+218,Welsh springer spaniel,ウェールズ・スプリンガー・スパニエル,,,#VALUE!
+219,"cocker spaniel, English cocker spaniel, cocker",コッカースパニエル、イングリッシュコッカースパニエル、コッカー,,,#VALUE!
+220,Sussex spaniel,サセックス・スパニエル,,,#VALUE!
+221,Irish water spaniel,アイリッシュウォータースパニエル,,,#VALUE!
+222,kuvasz,クヴァス,,,#VALUE!
+223,schipperke,シッパーケ,,,#VALUE!
+224,groenendael,グロネンダーエル,,,#VALUE!
+225,malinois,マリノア,,,#VALUE!
+226,briard,ブリリアード,,,#VALUE!
+227,kelpie,ケルピー,,,#VALUE!
+228,komondor,Komondor,,,#VALUE!
+229,"Old English sheepdog, bobtail",古い英語のシープドッグ、ボブテイル,,,#VALUE!
+230,"Shetland sheepdog, Shetland sheep dog, Shetland",シェットランドシープドッグ、シェトランドシープドッグ、シェットランド,,,#VALUE!
+231,collie,コリー,,,#VALUE!
+232,Border collie,ボーダーコリー,,,#VALUE!
+233,"Bouvier des Flandres, Bouviers des Flandres",ブーヴィエ・デ・フランダレス、ブーヴィエ・デ・フランドル,,,#VALUE!
+234,Rottweiler,ロットワイラー,,,#VALUE!
+235,"German shepherd, German shepherd dog, German police dog, alsatian",ドイツの羊飼い、ドイツの羊飼い犬、ドイツの警察犬、アルザシア語,,,#VALUE!
+236,"Doberman, Doberman pinscher",ドーバーマン、ドーバーマンピンシャー,,,#VALUE!
+237,miniature pinscher,ミニチュアピンシェル,,,#VALUE!
+238,Greater Swiss Mountain dog,グレータースイスマウンテンドッグ,,,#VALUE!
+239,Bernese mountain dog,ベルネーゼマウンテンドッグ,,,#VALUE!
+240,Appenzeller,アッペンツェラー,,,#VALUE!
+241,EntleBucher,エントレブチャー,,,#VALUE!
+242,boxer,ボクサー,,,#VALUE!
+243,bull mastiff,雄牛のマスティフ,,,#VALUE!
+244,Tibetan mastiff,チベタン・マスティフ,,,#VALUE!
+245,French bulldog,フレンチ・ブルドッグ,,,#VALUE!
+246,Great Dane,グレートデーン,,,#VALUE!
+247,"Saint Bernard, St Bernard",セントバーナード、セントバーナード,,,#VALUE!
+248,"Eskimo dog, husky",エスキモ犬、ハスキー,,,#VALUE!
+249,"malamute, malemute, Alaskan malamute",Malamute、Malemute、Alaskan Malamute,,,#VALUE!
+250,Siberian husky,シベリアンハスキー,,,#VALUE!
+251,"dalmatian, coach dog, carriage dog",ダルメシアン、コーチ犬、馬車犬,,,#VALUE!
+252,"affenpinscher, monkey pinscher, monkey dog",Affenpinscher、Monkey Pinscher、Monkey Dog,,,#VALUE!
+253,basenji,ゼンジ,,,#VALUE!
+254,"pug, pug-dog",パグ、パグ犬,,,#VALUE!
+255,Leonberg,レオンバーグ,,,#VALUE!
+256,"Newfoundland, Newfoundland dog",ニューファンドランド、ニューファンドランド犬,,,#VALUE!
+257,Great Pyrenees,偉大なピレネー,,,#VALUE!
+258,"Samoyed, Samoyede",サモエド、サモエデ,,,#VALUE!
+259,Pomeranian,ポメラニアン,,,#VALUE!
+260,"chow, chow chow",チャウ、チョウチョウ,,,#VALUE!
+261,keeshond,キーションド,,,#VALUE!
+262,Brabancon griffon,ブラバンコングリフォン,,,#VALUE!
+263,"Pembroke, Pembroke Welsh corgi",ペンブローク、ペンブロークウェールズコーギ,,,#VALUE!
+264,"Cardigan, Cardigan Welsh corgi",カーディガン、カーディガンウェールズコーギー,,,#VALUE!
+265,toy poodle,トイプードル,,,#VALUE!
+266,miniature poodle,ミニチュアプードル,,,#VALUE!
+267,standard poodle,標準のプードル,,,#VALUE!
+268,Mexican hairless,メキシコの毛,,,#VALUE!
+269,"timber wolf, grey wolf, gray wolf, Canis lupus",ティンバーウルフ、グレーウルフ、グレーウルフ、カニスループス,,,#VALUE!
+270,"white wolf, Arctic wolf, Canis lupus tundrarum",ホワイトウルフ、北極ウルフ、カニスループストンドララム,,,#VALUE!
+271,"red wolf, maned wolf, Canis rufus, Canis niger",レッドウルフ、マンスウルフ、カニスルファス、カニスニジェール,,,#VALUE!
+272,"coyote, prairie wolf, brush wolf, Canis latrans",コヨーテ、プレーリーウルフ、ブラシウルフ、カニスラトラン,,,#VALUE!
+273,"dingo, warrigal, warragal, Canis dingo",ディンゴ、ワリガル、ワラガル、カニスディンゴ,,,#VALUE!
+274,"dhole, Cuon alpinus",Dhole、Cuon Alpinus,,,#VALUE!
+275,"African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus",アフリカの狩猟犬、ハイエナ犬、ケープハンティング犬、リカオンピクトス,,,#VALUE!
+276,"hyena, hyaena",ハイエナ、ハイエナ,,,#VALUE!
+277,"red fox, Vulpes vulpes",レッドフォックス、バルペスバルペス,,,#VALUE!
+278,"kit fox, Vulpes macrotis",キットフォックス、Vulpes Macrotis,,,#VALUE!
+279,"Arctic fox, white fox, Alopex lagopus",北極キツネ、ホワイトフォックス、アロペックスラゴプス,,,#VALUE!
+280,"grey fox, gray fox, Urocyon cinereoargenteus",グレーフォックス、グレイフォックス、ウロシオンシネレオアレントゥウス,,,#VALUE!
+281,"tabby, tabby cat",タビー、タビー猫,,,#VALUE!
+282,tiger cat,タイガー猫,,,#VALUE!
+283,Persian cat,ペルシャ猫,,,#VALUE!
+284,"Siamese cat, Siamese",シャム猫、シャム,,,#VALUE!
+285,Egyptian cat,エジプト猫,,,#VALUE!
+286,"cougar, puma, catamount, mountain lion, painter, panther, Felis concolor",クーガー、プーマ、カタマウント、マウンテンライオン、画家、パンサー、フェリスコンコラー,,,#VALUE!
+287,"lynx, catamount",Lynx、Catamount,,,#VALUE!
+288,"leopard, Panthera pardus",ヒョウ、パンテラ・パルダス,,,#VALUE!
+289,"snow leopard, ounce, Panthera uncia",Snow Leopard、Ounce、Panthera uncia,,,#VALUE!
+290,"jaguar, panther, Panthera onca, Felis onca",Jaguar、Panther、Panthera Onca、Felis Onca,,,#VALUE!
+291,"lion, king of beasts, Panthera leo",ビーストの王、ライオン、パンテーラ・レオ,,,#VALUE!
+292,"tiger, Panthera tigris",タイガー、パンセラ・ティグリス,,,#VALUE!
+293,"cheetah, chetah, Acinonyx jubatus",チーター、チェタ、acinonyx jubatus,,,#VALUE!
+294,"brown bear, bruin, Ursus arctos",ヒグマ、ブルーイン、ウルサス・アークトス,,,#VALUE!
+295,"American black bear, black bear, Ursus americanus, Euarctos americanus",アメリカンツルジー、ブラックベア、ウルサスamericanus、euarctos americanus,,,#VALUE!
+296,"ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus",アイスベア、ホッキョクグマ、ウルサス・マリチマス、サラルクトス・マリチムス,,,#VALUE!
+297,"sloth bear, Melursus ursinus, Ursus ursinus",ナマケモノ、メルルスウルシヌス、ウルススウルシ​​ヌス,,,#VALUE!
+298,mongoose,マングース,,,#VALUE!
+299,"meerkat, mierkat",Meerkat、Mierkat,,,#VALUE!
+300,tiger beetle,タイガービートル,,,#VALUE!
+301,"ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle",テンディバッグ、レディビートル、レディービートル、テントウムシ、テントウムシカブトムシ,,,#VALUE!
+302,"ground beetle, carabid beetle",挽いたカブトムシ、カラビッドビートル,,,#VALUE!
+303,"long-horned beetle, longicorn, longicorn beetle",長い穴のあるカブトムシ、縦車穴、ロンギコーンビートル,,,#VALUE!
+304,"leaf beetle, chrysomelid",葉の甲虫、クリソメリド,,,#VALUE!
+305,dung beetle,糞の甲虫,,,#VALUE!
+306,rhinoceros beetle,サイカブトムシ,,,#VALUE!
+307,weevil,ゾウムシ,,,#VALUE!
+308,fly,飛ぶ,,,#VALUE!
+309,bee,蜂,,,#VALUE!
+310,"ant, emmet, pismire",アリ、エメット、ピスマイア,,,#VALUE!
+311,"grasshopper, hopper",グラスホッパー、ホッパー,,,#VALUE!
+312,cricket,クリケット,,,#VALUE!
+313,"walking stick, walkingstick, stick insect",ウォーキングスティック、ウォーキングスティック、スティック昆虫,,,#VALUE!
+314,"cockroach, roach",ゴキブリ、ゴキブリ,,,#VALUE!
+315,"mantis, mantid",マンティス、マンティッド,,,#VALUE!
+316,"cicada, cicala",CICADA、CICALA,,,#VALUE!
+317,leafhopper,葉ハッパー,,,#VALUE!
+318,"lacewing, lacewing fly",Lacewing、Lacewing Fly,,,#VALUE!
+319,"dragonfly, darning needle, devil\'s darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk",ドラゴンフライ、ダーニングニードル、悪魔のダーニングニードル、縫製針、ヘビフィーダー、ヘビドクター、モスキートホーク、スキーターホーク,,,#VALUE!
+320,damselfly,ダムセルリー,,,#VALUE!
+321,admiral,提督,,,#VALUE!
+322,"ringlet, ringlet butterfly",リングレット、リングレットバタフライ,,,#VALUE!
+323,"monarch, monarch butterfly, milkweed butterfly, Danaus plexippus",モナーク、モナークバタフライ、トウワタ蝶、ダナウスプレキシッパス,,,#VALUE!
+324,cabbage butterfly,キャベツバタフライ,,,#VALUE!
+325,"sulphur butterfly, sulfur butterfly",硫黄蝶、硫黄蝶,,,#VALUE!
+326,"lycaenid, lycaenid butterfly",Lycaenid、Lycaenid Butterfly,,,#VALUE!
+327,"starfish, sea star",ヒトデ、シースター,,,#VALUE!
+328,sea urchin,うに,,,#VALUE!
+329,"sea cucumber, holothurian",シーキュウリ、ホロスリアン,,,#VALUE!
+330,"wood rabbit, cottontail, cottontail rabbit",ウッドウサギ、コトンテール、コトンテイルラビット,,,#VALUE!
+331,hare,野ウサギ,,,#VALUE!
+332,"Angora, Angora rabbit",アンゴラ、アンゴラ・ラビット,,,#VALUE!
+333,hamster,ハムスター,,,#VALUE!
+334,"porcupine, hedgehog",ヤマアラシ、ハリネズミ,,,#VALUE!
+335,"fox squirrel, eastern fox squirrel, Sciurus niger",フォックスリス、イースタンフォックスリス、シウルスニジェール,,,#VALUE!
+336,marmot,マーモット,,,#VALUE!
+337,beaver,ビーバー,,,#VALUE!
+338,"guinea pig, Cavia cobaya",モルモット、カビア・コバヤ,,,#VALUE!
+339,sorrel,栗色,,,#VALUE!
+340,zebra,シマウマ,,,#VALUE!
+341,"hog, pig, grunter, squealer, Sus scrofa",豚、豚、グンター、鳴き声、sus scrofa,,,#VALUE!
+342,"wild boar, boar, Sus scrofa",イノシシ、イノシシ、sus scrofa,,,#VALUE!
+343,warthog,ワルトグ,,,#VALUE!
+344,"hippopotamus, hippo, river horse, Hippopotamus amphibius",Hippopotamus、Hippo、River Horse、Hippopotamus Amphibius,,,#VALUE!
+345,ox,牛,,,#VALUE!
+346,"water buffalo, water ox, Asiatic buffalo, Bubalus bubalis",ウォーターバッファロー、ウォーターオックス、アジアのバッファロー、ブバラスブバリス,,,#VALUE!
+347,bison,バイソン,,,#VALUE!
+348,"ram, tup",ラム、タップ,,,#VALUE!
+349,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",Bighorn、Bighorn Sheep、Cimarron、Rocky Mountain Bighorn、Rocky Mountain Sheep、Ovis Canadensis,,,#VALUE!
+350,"ibex, Capra ibex",Ibex、Capra Ibex,,,#VALUE!
+351,hartebeest,ハーテベスト,,,#VALUE!
+352,"impala, Aepyceros melampus",Impala、Aepyceros Melampus,,,#VALUE!
+353,gazelle,ガゼル,,,#VALUE!
+354,"Arabian camel, dromedary, Camelus dromedarius",アラビアのラクダ、ドロメダリー、カメロス・ドロメダリウス,,,#VALUE!
+355,llama,ラマ,,,#VALUE!
+356,weasel,イタチ,,,#VALUE!
+357,mink,ミンク,,,#VALUE!
+358,"polecat, fitch, foulmart, foumart, Mustela putorius",Polecat、Fitch、Foulmart、Foumart、Mustela Putorius,,,#VALUE!
+359,"black-footed ferret, ferret, Mustela nigripes",黒い足のフェレット、フェレット、マステラ・ニグリペス,,,#VALUE!
+360,otter,カワウソ,,,#VALUE!
+361,"skunk, polecat, wood pussy",スカンク、ポールキャット、ウッド猫,,,#VALUE!
+362,badger,狸,,,#VALUE!
+363,armadillo,アルマジロ,,,#VALUE!
+364,"three-toed sloth, ai, Bradypus tridactylus",3つのつま先のナマケモノ、AI、Bradypus tridactylus,,,#VALUE!
+365,"orangutan, orang, orangutang, Pongo pygmaeus",オランウータン、オラン、オラングタン、ポンゴ・ピグマエウス,,,#VALUE!
+366,"gorilla, Gorilla gorilla",ゴリラ、ゴリラゴリラ,,,#VALUE!
+367,"chimpanzee, chimp, Pan troglodytes",チンパンジー、チンパンジー、パントログロイジテス,,,#VALUE!
+368,"gibbon, Hylobates lar",ギボン、ヒロビアスlar,,,#VALUE!
+369,"siamang, Hylobates syndactylus, Symphalangus syndactylus",Siamang、Hylobates Syndactylus、Symphalangus Syndactylus,,,#VALUE!
+370,"guenon, guenon monkey",ゲノン、ゲノンモンキー,,,#VALUE!
+371,"patas, hussar monkey, Erythrocebus patas",パタス、ハッサルモンキー、エリスロチェバスパタス,,,#VALUE!
+372,baboon,ヒヒ,,,#VALUE!
+373,macaque,マカク,,,#VALUE!
+374,langur,ラングール,,,#VALUE!
+375,"colobus, colobus monkey",コロブス、コロブスモンキー,,,#VALUE!
+376,"proboscis monkey, Nasalis larvatus",猿猿、nasalis larvatus,,,#VALUE!
+377,marmoset,マーモセット,,,#VALUE!
+378,"capuchin, ringtail, Cebus capucinus",Capuchin、Ringtail、Cebus capucinus,,,#VALUE!
+379,"howler monkey, howler",ハウラーモンキー、ハウラー,,,#VALUE!
+380,"titi, titi monkey",ティティ、ティティモンキー,,,#VALUE!
+381,"spider monkey, Ateles geoffroyi",Spider Monkey、Ateles geoffroyi,,,#VALUE!
+382,"squirrel monkey, Saimiri sciureus",リスモンキー、サイミリサイウレウス,,,#VALUE!
+383,"Madagascar cat, ring-tailed lemur, Lemur catta",マダガスカル猫、リングテールレムール、レムールカッタ,,,#VALUE!
+384,"indri, indris, Indri indri, Indri brevicaudatus",Indri、Indris、Indri Indri、Indri Brevicaudatus,,,#VALUE!
+385,"Indian elephant, Elephas maximus",インドの象、エレファス・マクシムス,,,#VALUE!
+386,"African elephant, Loxodonta africana",アフリカ象、ロクソドンタアフリカナ,,,#VALUE!
+387,"lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens",レッサーパンダ、レッドパンダ、パンダ、クマ猫、猫のクマ、アイルルスフルゲンズ,,,#VALUE!
+388,"giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",ジャイアントパンダ、パンダ、パンダベア、クーンベア、アイルロポダメラノロウカ,,,#VALUE!
+389,"barracouta, snoek",バラクータ、スヌーク,,,#VALUE!
+390,eel,うなぎ,,,#VALUE!
+391,"coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch",Coho、Cohoe、Coho Salmon、Blue Jack、Silver Salmon、Oncorhynchus Kisutch,,,#VALUE!
+392,"rock beauty, Holocanthus tricolor",ロックビューティー、ホロカンサストリコラー,,,#VALUE!
+393,anemone fish,アネモネ魚,,,#VALUE!
+394,sturgeon,チョウザン,,,#VALUE!
+395,"gar, garfish, garpike, billfish, Lepisosteus osseus",Gar、Garfish、Garpike、Billfish、Lepisosteus osseus,,,#VALUE!
+396,lionfish,ウリオンフィッシュ,,,#VALUE!
+397,"puffer, pufferfish, blowfish, globefish",パフ、フック、ブローフィッシュ、グローブフィッシュ,,,#VALUE!
+398,abacus,そろばん,,,#VALUE!
+399,abaya,アバヤ,,,#VALUE!
+400,"academic gown, academic robe, judge\'s robe",アカデミックガウン、アカデミックローブ、裁判官のローブ,,,#VALUE!
+401,"accordion, piano accordion, squeeze box",アコーディオン、ピアノアコーディオン、スクイーズボックス,,,#VALUE!
+402,acoustic guitar,アコースティックギター,,,#VALUE!
+403,"aircraft carrier, carrier, flattop, attack aircraft carrier",航空機キャリア、キャリア、フラットトップ、攻撃航空機のキャリア,,,#VALUE!
+404,airliner,旅客機,,,#VALUE!
+405,"airship, dirigible",飛行船、dirigible,,,#VALUE!
+406,altar,祭壇,,,#VALUE!
+407,ambulance,救急車,,,#VALUE!
+408,"amphibian, amphibious vehicle",両生類の水陸両用車,,,#VALUE!
+409,analog clock,アナログクロック,,,#VALUE!
+410,"apiary, bee house",養蜂場、蜂の家,,,#VALUE!
+411,apron,エプロン,,,#VALUE!
+412,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",アシュカン、ゴミ箱、ごみ缶、廃棄物、アッシュビン、アッシュビン、アシュビン、ダストビン、ゴミ樽、ゴミ箱,,,#VALUE!
+413,"assault rifle, assault gun",アサルトライフル、攻撃銃,,,#VALUE!
+414,"backpack, back pack, knapsack, packsack, rucksack, haversack",バックパック、バックパック、ナップサック、パックサック、リュックサック、haversack,,,#VALUE!
+415,"bakery, bakeshop, bakehouse",ベーカリー、ベイクショップ、ベイクハウス,,,#VALUE!
+416,"balance beam, beam",バランスビーム、ビーム,,,#VALUE!
+417,balloon,バルーン,,,#VALUE!
+418,"ballpoint, ballpoint pen, ballpen, Biro",ボールペン、ボールペン、ボールペン、ビロ,,,#VALUE!
+419,Band Aid,バンドエイド,,,#VALUE!
+420,banjo,バンジョー,,,#VALUE!
+421,"bannister, banister, balustrade, balusters, handrail",Bannister、Vanister、Balustrade、Balusters、Handrail,,,#VALUE!
+422,barbell,バーベル,,,#VALUE!
+423,barber chair,床屋の椅子,,,#VALUE!
+424,barbershop,理髪店,,,#VALUE!
+425,barn,納屋,,,#VALUE!
+426,barometer,バロメーター,,,#VALUE!
+427,"barrel, cask",バレル、キャスク,,,#VALUE!
+428,"barrow, garden cart, lawn cart, wheelbarrow",バロー、ガーデンカート、芝生カート、手押し車,,,#VALUE!
+429,baseball,野球,,,#VALUE!
+430,basketball,バスケットボール,,,#VALUE!
+431,bassinet,バシネット,,,#VALUE!
+432,bassoon,ファゴット,,,#VALUE!
+433,"bathing cap, swimming cap",水着、水泳帽,,,#VALUE!
+434,bath towel,バスタオル,,,#VALUE!
+435,"bathtub, bathing tub, bath, tub",バスタブ、水着、バス、浴槽,,,#VALUE!
+436,"beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon",ビーチワゴン、ステーションワゴン、ワゴン、エステートカー、ビーチワゴン、ステーションワゴン、ワゴン,,,#VALUE!
+437,"beacon, lighthouse, beacon light, pharos",ビーコン、灯台、ビーコンライト、ファロス,,,#VALUE!
+438,beaker,ビーカー,,,#VALUE!
+439,"bearskin, busby, shako",ベアスキン、バスビー、シャコ,,,#VALUE!
+440,beer bottle,ビール瓶,,,#VALUE!
+441,beer glass,ビールグラス,,,#VALUE!
+442,"bell cote, bell cot",ベルコート、ベルコット,,,#VALUE!
+443,bib,よだれかけ,,,#VALUE!
+444,"bicycle-built-for-two, tandem bicycle, tandem",自転車で構築された2人、タンデム自転車、タンデム,,,#VALUE!
+445,"bikini, two-piece",ビキニ、ツーピース,,,#VALUE!
+446,"binder, ring-binder",バインダー、リングバインダー,,,#VALUE!
+447,"binoculars, field glasses, opera glasses",双眼鏡、フィールドグラス、オペラメガネ,,,#VALUE!
+448,birdhouse,バードハウス,,,#VALUE!
+449,boathouse,ボートハウス,,,#VALUE!
+450,"bobsled, bobsleigh, bob",ボブスレー、ボブスリー、ボブ,,,#VALUE!
+451,"bolo tie, bolo, bola tie, bola",Bolo Tie、Bolo、Bola Tie、Bola,,,#VALUE!
+452,"bonnet, poke bonnet",ボンネット、ポークボンネット,,,#VALUE!
+453,bookcase,本棚,,,#VALUE!
+454,"bookshop, bookstore, bookstall",書店、書店、書店,,,#VALUE!
+455,bottlecap,瓶のキャップ,,,#VALUE!
+456,bow,弓,,,#VALUE!
+457,"bow tie, bow-tie, bowtie",蝶ネクタイ、蝶ネクタイ、ボウタイ,,,#VALUE!
+458,"brass, memorial tablet, plaque",真鍮、記念タブレット、プラーク,,,#VALUE!
+459,"brassiere, bra, bandeau",ブラジャー、ブラ、バンドー,,,#VALUE!
+460,"breakwater, groin, groyne, mole, bulwark, seawall, jetty",ブレイクウォーター、gro径部、グロイン、ほくろ、防波堤、シーウォール、桟橋,,,#VALUE!
+461,"breastplate, aegis, egis",胸当て、aegis、egis,,,#VALUE!
+462,broom,ほうき,,,#VALUE!
+463,"bucket, pail",バケツ、バケツ,,,#VALUE!
+464,buckle,バックル,,,#VALUE!
+465,bulletproof vest,防弾チョッキ,,,#VALUE!
+466,"bullet train, bullet",弾丸列車、弾丸,,,#VALUE!
+467,"butcher shop, meat market",肉屋、肉市場,,,#VALUE!
+468,"cab, hack, taxi, taxicab",キャブ、ハック、タクシー、タクシー,,,#VALUE!
+469,"caldron, cauldron",カルドロン、大釜,,,#VALUE!
+470,"candle, taper, wax light",キャンドル、テーパー、ワックスライト,,,#VALUE!
+471,cannon,大砲,,,#VALUE!
+472,canoe,カヌー,,,#VALUE!
+473,"can opener, tin opener",缶切り、ティンオープナー,,,#VALUE!
+474,cardigan,カーディガン,,,#VALUE!
+475,car mirror,カーミラー,,,#VALUE!
+476,"carousel, carrousel, merry-go-round, roundabout, whirligig",カルーセル、カルーセル、メリーゴーラウンド、ラウンドアバウト、ワールギグ,,,#VALUE!
+477,"carpenter\'s kit, tool kit",Carpenter \ 'sキット、ツールキット,,,#VALUE!
+478,carton,カートン,,,#VALUE!
+479,car wheel,カーホイール,,,#VALUE!
+480,"cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM",キャッシュマシン、キャッシュディスペン、自動窓口装置、自動窓口装置、自動窓口係、自動窓口係、ATM,,,#VALUE!
+481,cassette,カセット,,,#VALUE!
+482,cassette player,カセット・プレーヤー,,,#VALUE!
+483,castle,城,,,#VALUE!
+484,catamaran,カタマラン,,,#VALUE!
+485,CD player,CDプレーヤー,,,#VALUE!
+486,"cello, violoncello",チェロ、ヴィオロンセロ,,,#VALUE!
+487,"cellular telephone, cellular phone, cellphone, cell, mobile phone",携帯電話、携帯電話、携帯電話、携帯電話、携帯電話,,,#VALUE!
+488,chain,鎖,,,#VALUE!
+489,chainlink fence,チェーンリンクフェンス,,,#VALUE!
+490,"chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour",チェーンメール、リングメール、メール、チェーンアーマー、チェーンアーマー、リングアーマー、リングアーマー,,,#VALUE!
+491,"chain saw, chainsaw",チェーンソー、チェーンソー,,,#VALUE!
+492,chest,胸,,,#VALUE!
+493,"chiffonier, commode",Chiffonier、Commode,,,#VALUE!
+494,"chime, bell, gong",チャイム、ベル、ゴング,,,#VALUE!
+495,"china cabinet, china closet",チャイナキャビネット、中国クローゼット,,,#VALUE!
+496,Christmas stocking,クリスマスの靴下,,,#VALUE!
+497,"church, church building",教会、教会の建物,,,#VALUE!
+498,"cinema, movie theater, movie theatre, movie house, picture palace",映画館、映画館、映画館、映画館、写真宮殿,,,#VALUE!
+499,"cleaver, meat cleaver, chopper",裂け目、肉包丁、チョッパー,,,#VALUE!
+500,cliff dwelling,崖の住居,,,#VALUE!
+501,cloak,マント,,,#VALUE!
+502,"clog, geta, patten, sabot",詰まり、geta、パッテン、サボ,,,#VALUE!
+503,cocktail shaker,カクテルシェーカー,,,#VALUE!
+504,coffee mug,コーヒーマグカップ,,,#VALUE!
+505,coffeepot,コーヒーポット,,,#VALUE!
+506,"coil, spiral, volute, whorl, helix",コイル、スパイラル、ボルート、渦巻き、ヘリックス,,,#VALUE!
+507,combination lock,コンビネーションロック,,,#VALUE!
+508,"computer keyboard, keypad",コンピューターキーボード、キーパッド,,,#VALUE!
+509,"confectionery, confectionary, candy store",菓子、菓子、キャンディーストア,,,#VALUE!
+510,"container ship, containership, container vessel",コンテナ船、コンテナシップ、コンテナ船,,,#VALUE!
+511,convertible,コンバーチブル,,,#VALUE!
+512,"corkscrew, bottle screw",コルクスクリュー、ボトルスクリュー,,,#VALUE!
+513,"cornet, horn, trumpet, trump",コルネット、ホーン、トランペット、トランプ,,,#VALUE!
+514,cowboy boot,カウボーイブーツ,,,#VALUE!
+515,"cowboy hat, ten-gallon hat",カウボーイハット、10ガロンの帽子,,,#VALUE!
+516,cradle,ゆりかご,,,#VALUE!
+517,crane,クレーン,,,#VALUE!
+518,crash helmet,クラッシュヘルメット,,,#VALUE!
+519,crate,クレート,,,#VALUE!
+520,"crib, cot",ベビーベッド、ベッド,,,#VALUE!
+521,Crock Pot,クロックポット,,,#VALUE!
+522,croquet ball,クロッケボール,,,#VALUE!
+523,crutch,松葉杖,,,#VALUE!
+524,cuirass,cuirass,,,#VALUE!
+525,"dam, dike, dyke",ダム、堤防、堤防,,,#VALUE!
+526,desk,デスク,,,#VALUE!
+527,desktop computer,デスクトップコンピューター,,,#VALUE!
+528,"dial telephone, dial phone",電話をダイヤルして、電話をダイヤルします,,,#VALUE!
+529,"diaper, nappy, napkin",おむつ、おむつ、ナプキン,,,#VALUE!
+530,digital clock,デジタル時計,,,#VALUE!
+531,digital watch,デジタル腕時計,,,#VALUE!
+532,"dining table, board",ダイニングテーブル、ボード,,,#VALUE!
+533,"dishrag, dishcloth",ディッシュラグ、食器布,,,#VALUE!
+534,"dishwasher, dish washer, dishwashing machine",食器洗い機、洗濯機、食器洗い機,,,#VALUE!
+535,"disk brake, disc brake",ディスクブレーキ、ディスクブレーキ,,,#VALUE!
+536,"dock, dockage, docking facility",ドック、ドック、ドッキング施設,,,#VALUE!
+537,"dogsled, dog sled, dog sleigh",犬のそば、犬のそり、犬のそり,,,#VALUE!
+538,dome,ドーム,,,#VALUE!
+539,"doormat, welcome mat",ドアマット、ようこそマット,,,#VALUE!
+540,"drilling platform, offshore rig",掘削プラットフォーム、オフショアリグ,,,#VALUE!
+541,"drum, membranophone, tympan",ドラム、膜形態、ティンパン,,,#VALUE!
+542,drumstick,ドラムスティック,,,#VALUE!
+543,dumbbell,ダンベル,,,#VALUE!
+544,Dutch oven,ダッチオーブン,,,#VALUE!
+545,"electric fan, blower",電気ファン、ブロワー,,,#VALUE!
+546,electric guitar,エレキギター,,,#VALUE!
+547,electric locomotive,電気機関車,,,#VALUE!
+548,entertainment center,エンターテインメントセンター,,,#VALUE!
+549,envelope,封筒,,,#VALUE!
+550,espresso maker,エスプレッソメーカー,,,#VALUE!
+551,face powder,フェースパウダー,,,#VALUE!
+552,"feather boa, boa",フェザーボア、ボア,,,#VALUE!
+553,"file, file cabinet, filing cabinet",ファイル、ファイルキャビネット、ファイリングキャビネット,,,#VALUE!
+554,fireboat,ファイアボート,,,#VALUE!
+555,"fire engine, fire truck",消防車、消防車,,,#VALUE!
+556,"fire screen, fireguard",火のスクリーン、ファイアガード,,,#VALUE!
+557,"flagpole, flagstaff",フラッグポール、フラッグスタッフ,,,#VALUE!
+558,"flute, transverse flute",フルート、横フルート,,,#VALUE!
+559,folding chair,折りたたみ椅子,,,#VALUE!
+560,football helmet,サッカーヘルメット,,,#VALUE!
+561,forklift,フォークリフト,,,#VALUE!
+562,fountain,噴水,,,#VALUE!
+563,fountain pen,万年筆,,,#VALUE!
+564,four-poster,4ポスター,,,#VALUE!
+565,freight car,貨車,,,#VALUE!
+566,"French horn, horn",フレンチホーン、ホーン,,,#VALUE!
+567,"frying pan, frypan, skillet",フライパン、フライパン、フライパン,,,#VALUE!
+568,fur coat,ファーコート,,,#VALUE!
+569,"garbage truck, dustcart",ゴミトラック、ダストカート,,,#VALUE!
+570,"gasmask, respirator, gas helmet",ガスマスク、呼吸器、ガスヘルメット,,,#VALUE!
+571,"gas pump, gasoline pump, petrol pump, island dispenser",ガスポンプ、ガソリンポンプ、ガソリンポンプ、島ディスペンサー,,,#VALUE!
+572,goblet,ゴブレット,,,#VALUE!
+573,go-kart,ゴーカート,,,#VALUE!
+574,golf ball,ゴルフボール,,,#VALUE!
+575,"golfcart, golf cart",ゴルフカート、ゴルフカート,,,#VALUE!
+576,gondola,ゴンドラ,,,#VALUE!
+577,"gong, tam-tam",ゴング、タムタム,,,#VALUE!
+578,gown,ガウン,,,#VALUE!
+579,"grand piano, grand",グランドピアノ、グランド,,,#VALUE!
+580,"greenhouse, nursery, glasshouse",温室、保育園、グラスハウス,,,#VALUE!
+581,"grille, radiator grille",グリル、ラジエーターグリル,,,#VALUE!
+582,"grocery store, grocery, food market, market",食料品店、食料品、食品市場、市場,,,#VALUE!
+583,guillotine,ギロチン,,,#VALUE!
+584,hair slide,ヘアスライド,,,#VALUE!
+585,hair spray,ヘアスプレー,,,#VALUE!
+586,half track,ハーフトラック,,,#VALUE!
+587,hammer,ハンマー,,,#VALUE!
+588,hamper,妨害します,,,#VALUE!
+589,"hand blower, blow dryer, blow drier, hair dryer, hair drier",ハンドブロワー、ブロードライヤー、ブロードライヤー、ヘアドライヤー、ヘアドライヤー,,,#VALUE!
+590,"hand-held computer, hand-held microcomputer",ハンドヘルドコンピューター、ハンドヘルドマイクロコンピューター,,,#VALUE!
+591,"handkerchief, hankie, hanky, hankey",ハンカチ、ハンキー、ハンキー、ハンキー,,,#VALUE!
+592,"hard disc, hard disk, fixed disk",ハードディスク、ハードディスク、固定ディスク,,,#VALUE!
+593,"harmonica, mouth organ, harp, mouth harp",ハーモニカ、マウスオルガン、ハープ、マウスハープ,,,#VALUE!
+594,harp,ハープ,,,#VALUE!
+595,"harvester, reaper",ハーベスター、死神,,,#VALUE!
+596,hatchet,手hatch,,,#VALUE!
+597,holster,ホルスター,,,#VALUE!
+598,"home theater, home theatre",ホームシアター、ホームシアター,,,#VALUE!
+599,honeycomb,ハニカム,,,#VALUE!
+600,"hook, claw",フック、爪,,,#VALUE!
+601,"hoopskirt, crinoline",フープスカート、クリノリン,,,#VALUE!
+602,"horizontal bar, high bar",水平バー、ハイバー,,,#VALUE!
+603,"horse cart, horse-cart",馬カート、馬車,,,#VALUE!
+604,hourglass,砂時計,,,#VALUE!
+605,iPod,iPod,,,#VALUE!
+606,"iron, smoothing iron",鉄、滑らかな鉄,,,#VALUE!
+607,jack-o\'-lantern,jack-o \ ' - ランタン,,,#VALUE!
+608,"jean, blue jean, denim",ジャン、ブルージャン、デニム,,,#VALUE!
+609,"jeep, landrover",ジープ、ランドローバー,,,#VALUE!
+610,"jersey, T-shirt, tee shirt",ジャージー、Tシャツ、Tシャツ,,,#VALUE!
+611,jigsaw puzzle,ジグソーパズル,,,#VALUE!
+612,"jinrikisha, ricksha, rickshaw",ジンリキシャ、リックシャ、人力車,,,#VALUE!
+613,joystick,ジョイスティック,,,#VALUE!
+614,kimono,着物,,,#VALUE!
+615,knee pad,膝パッド,,,#VALUE!
+616,knot,結び目,,,#VALUE!
+617,"lab coat, laboratory coat",ラボコート、実験用コート,,,#VALUE!
+618,ladle,ひしゃく,,,#VALUE!
+619,"lampshade, lamp shade",ランプシェード、ランプシェード,,,#VALUE!
+620,"laptop, laptop computer",ラップトップ、ラップトップコンピューター,,,#VALUE!
+621,"lawn mower, mower",芝刈り機、芝刈り機,,,#VALUE!
+622,"lens cap, lens cover",レンズキャップ、レンズカバー,,,#VALUE!
+623,"letter opener, paper knife, paperknife",レターオープナー、ペーパーナイフ、ペーパーナイフ,,,#VALUE!
+624,library,図書館,,,#VALUE!
+625,lifeboat,救命艇,,,#VALUE!
+626,"lighter, light, igniter, ignitor",軽い、軽い、イグナイター、イグナイター,,,#VALUE!
+627,"limousine, limo",リムジン、リムジン,,,#VALUE!
+628,"liner, ocean liner",ライナー、オーシャンライナー,,,#VALUE!
+629,"lipstick, lip rouge",口紅、リップルージュ,,,#VALUE!
+630,Loafer,ローファー,,,#VALUE!
+631,lotion,ローション,,,#VALUE!
+632,"loudspeaker, speaker, speaker unit, loudspeaker system, speaker system",スピーカー、スピーカー、スピーカーユニット、スピーカーシステム、スピーカーシステム,,,#VALUE!
+633,"loupe, jeweler\'s loupe",ループ、宝石商のループ,,,#VALUE!
+634,"lumbermill, sawmill",製材所、製材所,,,#VALUE!
+635,magnetic compass,方位磁針,,,#VALUE!
+636,"mailbag, postbag",MailBag、PostBag,,,#VALUE!
+637,"mailbox, letter box",メールボックス、レターボックス,,,#VALUE!
+638,maillot,マイロット,,,#VALUE!
+639,"maillot, tank suit",マイロ、タンクスーツ,,,#VALUE!
+640,manhole cover,マンホールカバー,,,#VALUE!
+641,maraca,マラカス,,,#VALUE!
+642,"marimba, xylophone",マリンバ、キシロフォン,,,#VALUE!
+643,mask,マスク,,,#VALUE!
+644,matchstick,マッチスティック,,,#VALUE!
+645,maypole,メイポール,,,#VALUE!
+646,"maze, labyrinth",迷路、迷路,,,#VALUE!
+647,measuring cup,計量カップ,,,#VALUE!
+648,"medicine chest, medicine cabinet",薬箱、薬キャビネット,,,#VALUE!
+649,"megalith, megalithic structure",巨石、巨石構造,,,#VALUE!
+650,"microphone, mike",マイク、マイク,,,#VALUE!
+651,"microwave, microwave oven",電子レンジ、電子レンジ,,,#VALUE!
+652,military uniform,軍服,,,#VALUE!
+653,milk can,牛乳はできます,,,#VALUE!
+654,minibus,ミニバス,,,#VALUE!
+655,"miniskirt, mini",ミニスカート、ミニ,,,#VALUE!
+656,minivan,ミニバン,,,#VALUE!
+657,missile,ミサイル,,,#VALUE!
+658,mitten,ミトン,,,#VALUE!
+659,mixing bowl,ミキシングボウル,,,#VALUE!
+660,"mobile home, manufactured home",モバイルホーム、製造された家,,,#VALUE!
+661,Model T,モデルt,,,#VALUE!
+662,modem,モデム,,,#VALUE!
+663,monastery,修道院,,,#VALUE!
+664,monitor,モニター,,,#VALUE!
+665,moped,モペット,,,#VALUE!
+666,mortar,モルタル,,,#VALUE!
+667,mortarboard,モルタルボード,,,#VALUE!
+668,mosque,モスク,,,#VALUE!
+669,mosquito net,蚊帳,,,#VALUE!
+670,"motor scooter, scooter",モータースクーター、スクーター,,,#VALUE!
+671,"mountain bike, all-terrain bike, off-roader",マウンテンバイク、オールテレインバイク、オフロード業者,,,#VALUE!
+672,mountain tent,マウンテンテント,,,#VALUE!
+673,"mouse, computer mouse",マウス、コンピューターマウス,,,#VALUE!
+674,mousetrap,マウストラップ,,,#VALUE!
+675,moving van,動くバン,,,#VALUE!
+676,muzzle,銃口,,,#VALUE!
+677,nail,爪,,,#VALUE!
+678,neck brace,ネックブレース,,,#VALUE!
+679,necklace,ネックレス,,,#VALUE!
+680,nipple,乳首,,,#VALUE!
+681,"notebook, notebook computer",ノートブック、ノートブックコンピューター,,,#VALUE!
+682,obelisk,オベリスク,,,#VALUE!
+683,"oboe, hautboy, hautbois",オーボー、ハートボーイ、ハウコイ,,,#VALUE!
+684,"ocarina, sweet potato",オカリナ、サツマイモ,,,#VALUE!
+685,"odometer, hodometer, mileometer, milometer",走行距離計、ホドメーター、マイルメートル、ミロメーター,,,#VALUE!
+686,oil filter,オイルフィルター,,,#VALUE!
+687,"organ, pipe organ",オルガン、パイプオルガン,,,#VALUE!
+688,"oscilloscope, scope, cathode-ray oscilloscope, CRO",オシロスコープ、スコープ、カソード照射オシロスコープ、CRO,,,#VALUE!
+689,overskirt,オーバースカート,,,#VALUE!
+690,oxcart,牛車,,,#VALUE!
+691,oxygen mask,酸素マスク,,,#VALUE!
+692,packet,パケット,,,#VALUE!
+693,"paddle, boat paddle",パドル、ボートパドル,,,#VALUE!
+694,"paddlewheel, paddle wheel",パドルホイール、パドルホイール,,,#VALUE!
+695,padlock,南京錠,,,#VALUE!
+696,paintbrush,絵筆,,,#VALUE!
+697,"pajama, pyjama, pj\'s, jammies",パジャマ、パジャマ、pj \ 's、ジャミー,,,#VALUE!
+698,palace,城,,,#VALUE!
+699,"panpipe, pandean pipe, syrinx",パンパイプ、パンディーンパイプ、シリンクス,,,#VALUE!
+700,paper towel,ペーパータオル,,,#VALUE!
+701,"parachute, chute",パラシュート、シュート,,,#VALUE!
+702,"parallel bars, bars",平行バー、バー,,,#VALUE!
+703,park bench,公園のベンチ,,,#VALUE!
+704,parking meter,パーキングメーター,,,#VALUE!
+705,"passenger car, coach, carriage",乗用車、コーチ、馬車,,,#VALUE!
+706,"patio, terrace",パティオ、テラス,,,#VALUE!
+707,"pay-phone, pay-station",ペイフォン、ペイステーション,,,#VALUE!
+708,"pedestal, plinth, footstall",台座、台座、足場,,,#VALUE!
+709,"pencil box, pencil case",鉛筆箱、鉛筆ケース,,,#VALUE!
+710,pencil sharpener,鉛筆削り,,,#VALUE!
+711,"perfume, essence",香水、エッセンス,,,#VALUE!
+712,Petri dish,ペトリ皿,,,#VALUE!
+713,photocopier,コピー機,,,#VALUE!
+714,"pick, plectrum, plectron",ピック、プレクトラム、プレクトロン,,,#VALUE!
+715,pickelhaube,Pickelhaube,,,#VALUE!
+716,"picket fence, paling",ピケットフェンス、薄暗い,,,#VALUE!
+717,"pickup, pickup truck",ピックアップ、ピックアップトラック,,,#VALUE!
+718,pier,橋脚,,,#VALUE!
+719,"piggy bank, penny bank",ピギーバンク、ペニー銀行,,,#VALUE!
+720,pill bottle,錠剤瓶,,,#VALUE!
+721,pillow,まくら,,,#VALUE!
+722,ping-pong ball,ピンポンボール,,,#VALUE!
+723,pinwheel,ピンホイール,,,#VALUE!
+724,"pirate, pirate ship",海賊、海賊船,,,#VALUE!
+725,"pitcher, ewer",ピッチャー、Ewer,,,#VALUE!
+726,"plane, carpenter\'s plane, woodworking plane",飛行機、大工\の飛行機、木工飛行機,,,#VALUE!
+727,planetarium,プラネタリウム,,,#VALUE!
+728,plastic bag,ビニール袋,,,#VALUE!
+729,plate rack,プレートラック,,,#VALUE!
+730,"plow, plough",プラウ、プラウ,,,#VALUE!
+731,"plunger, plumber\'s helper",プランジャー、配管工のヘルパー,,,#VALUE!
+732,"Polaroid camera, Polaroid Land camera",ポラロイドカメラ、ポラロイドランドカメラ,,,#VALUE!
+733,pole,ポール,,,#VALUE!
+734,"police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria",警察バン、警察ワゴン、パディワゴン、パトロールワゴン、ワゴン、ブラックマリア,,,#VALUE!
+735,poncho,ポンチョ,,,#VALUE!
+736,"pool table, billiard table, snooker table",プールテーブル、ビリヤードテーブル、スヌーカーテーブル,,,#VALUE!
+737,"pop bottle, soda bottle",ポップボトル、ソーダボトル,,,#VALUE!
+738,"pot, flowerpot",ポット、フラワーポット,,,#VALUE!
+739,potter\'s wheel,ポッターの車輪,,,#VALUE!
+740,power drill,パワードリル,,,#VALUE!
+741,"prayer rug, prayer mat",祈りの敷物、祈りのマット,,,#VALUE!
+742,printer,プリンター,,,#VALUE!
+743,"prison, prison house",刑務所、刑務所,,,#VALUE!
+744,"projectile, missile",発射体、ミサイル,,,#VALUE!
+745,projector,プロジェクター,,,#VALUE!
+746,"puck, hockey puck",パック、ホッケーパック,,,#VALUE!
+747,"punching bag, punch bag, punching ball, punchball",パンチングバッグ、パンチバッグ、パンチボール、パンチボール,,,#VALUE!
+748,purse,財布,,,#VALUE!
+749,"quill, quill pen",クイル、クイルペン,,,#VALUE!
+750,"quilt, comforter, comfort, puff",キルト、掛け布団、快適さ、パフ,,,#VALUE!
+751,"racer, race car, racing car",レーサー、レースカー、レーシングカー,,,#VALUE!
+752,"racket, racquet",ラケット、ラケット,,,#VALUE!
+753,radiator,ラジエーター,,,#VALUE!
+754,"radio, wireless",ラジオ、ワイヤレス,,,#VALUE!
+755,"radio telescope, radio reflector",無線望遠鏡、ラジオリフレクター,,,#VALUE!
+756,rain barrel,レインバレル,,,#VALUE!
+757,"recreational vehicle, RV, R.V.",レクリエーションビークル、RV、R.V。,,,#VALUE!
+758,reel,リール,,,#VALUE!
+759,reflex camera,反射カメラ,,,#VALUE!
+760,"refrigerator, icebox",冷蔵庫、アイスボックス,,,#VALUE!
+761,"remote control, remote",リモートコントロール、リモート,,,#VALUE!
+762,"restaurant, eating house, eating place, eatery",レストラン、食事の家、食事場所、飲食店,,,#VALUE!
+763,"revolver, six-gun, six-shooter",リボルバー、6銃、6射手,,,#VALUE!
+764,rifle,ライフル,,,#VALUE!
+765,"rocking chair, rocker",ロッキングチェア、ロッカー,,,#VALUE!
+766,rotisserie,ロティサリー,,,#VALUE!
+767,"rubber eraser, rubber, pencil eraser",ゴム消しゴム、ゴム、鉛筆消しゴム,,,#VALUE!
+768,rugby ball,ラグビーボール,,,#VALUE!
+769,"rule, ruler",ルール、支配者,,,#VALUE!
+770,running shoe,ランニングシューズ,,,#VALUE!
+771,safe,安全,,,#VALUE!
+772,safety pin,安全ピン,,,#VALUE!
+773,"saltshaker, salt shaker",ソルトシェーカー、ソルトシェーカー,,,#VALUE!
+774,sandal,サンダル,,,#VALUE!
+775,sarong,サロン,,,#VALUE!
+776,"sax, saxophone",サックス、サックス,,,#VALUE!
+777,scabbard,鞘,,,#VALUE!
+778,"scale, weighing machine",スケール、計量機,,,#VALUE!
+779,school bus,スクールバス,,,#VALUE!
+780,schooner,スクーナー,,,#VALUE!
+781,scoreboard,スコアボード,,,#VALUE!
+782,"screen, CRT screen",画面、CRT画面,,,#VALUE!
+783,screw,スクリュー,,,#VALUE!
+784,screwdriver,ドライバー,,,#VALUE!
+785,"seat belt, seatbelt",シートベルト、シートベルト,,,#VALUE!
+786,sewing machine,ミシン,,,#VALUE!
+787,"shield, buckler",シールド、バックラー,,,#VALUE!
+788,"shoe shop, shoe-shop, shoe store",靴屋、靴ショップ、靴屋,,,#VALUE!
+789,shoji,shaji,,,#VALUE!
+790,shopping basket,買い物かご,,,#VALUE!
+791,shopping cart,ショッピングカート,,,#VALUE!
+792,shovel,シャベル,,,#VALUE!
+793,shower cap,シャワーキャップ,,,#VALUE!
+794,shower curtain,シャワーカーテン,,,#VALUE!
+795,ski,スキー,,,#VALUE!
+796,ski mask,目出し帽,,,#VALUE!
+797,sleeping bag,寝袋,,,#VALUE!
+798,"slide rule, slipstick",スライドルール、スリップスティック,,,#VALUE!
+799,sliding door,引き戸,,,#VALUE!
+800,"slot, one-armed bandit",スロット、片腕の盗賊,,,#VALUE!
+801,snorkel,スノーケル,,,#VALUE!
+802,snowmobile,スノーモービル,,,#VALUE!
+803,"snowplow, snowplough",除雪車、雪子,,,#VALUE!
+804,soap dispenser,石鹸ディスペンサー,,,#VALUE!
+805,soccer ball,サッカーボール,,,#VALUE!
+806,sock,靴下,,,#VALUE!
+807,"solar dish, solar collector, solar furnace",ソーラーディッシュ、ソーラーコレクター、ソーラー炉,,,#VALUE!
+808,sombrero,ソンブレロ,,,#VALUE!
+809,soup bowl,スープボウル,,,#VALUE!
+810,space bar,スペースキー,,,#VALUE!
+811,space heater,スペースヒーター,,,#VALUE!
+812,space shuttle,スペースシャトル,,,#VALUE!
+813,spatula,ヘラ,,,#VALUE!
+814,speedboat,スピードボート,,,#VALUE!
+815,"spider web, spider\'s web",Spider Web、Spider \ 'のWeb,,,#VALUE!
+816,spindle,スピンドル,,,#VALUE!
+817,"sports car, sport car",スポーツカー、スポーツカー,,,#VALUE!
+818,"spotlight, spot",スポットライト、スポット,,,#VALUE!
+819,stage,ステージ,,,#VALUE!
+820,steam locomotive,蒸気機関車,,,#VALUE!
+821,steel arch bridge,スチールアーチブリッジ,,,#VALUE!
+822,steel drum,スチールドラム,,,#VALUE!
+823,stethoscope,聴診器,,,#VALUE!
+824,stole,ストール,,,#VALUE!
+825,stone wall,石垣,,,#VALUE!
+826,"stopwatch, stop watch",ストップウォッチ、停止時計,,,#VALUE!
+827,stove,ストーブ,,,#VALUE!
+828,strainer,ストレーナー,,,#VALUE!
+829,"streetcar, tram, tramcar, trolley, trolley car",路面電車、路面電車、トラムカー、トロリー、トロリーカー,,,#VALUE!
+830,stretcher,ストレッチャー,,,#VALUE!
+831,"studio couch, day bed",スタジオカウチ、デイベッド,,,#VALUE!
+832,"stupa, tope",仏塔、トープ,,,#VALUE!
+833,"submarine, pigboat, sub, U-boat",潜水艦、豚ボート、サブ、Uボート,,,#VALUE!
+834,"suit, suit of clothes",スーツ、服のスーツ,,,#VALUE!
+835,sundial,日時計,,,#VALUE!
+836,sunglass,サングラス,,,#VALUE!
+837,"sunglasses, dark glasses, shades",サングラス、暗い眼鏡、色合い,,,#VALUE!
+838,"sunscreen, sunblock, sun blocker",日焼け止め、日焼け止め、日焼け止め,,,#VALUE!
+839,suspension bridge,サスペンションブリッジ,,,#VALUE!
+840,"swab, swob, mop",スワブ、sw、モップ,,,#VALUE!
+841,sweatshirt,トレーナー,,,#VALUE!
+842,"swimming trunks, bathing trunks",水泳のトランク、入浴トランク,,,#VALUE!
+843,swing,スイング,,,#VALUE!
+844,"switch, electric switch, electrical switch",スイッチ、電気スイッチ、電気スイッチ,,,#VALUE!
+845,syringe,シリンジ,,,#VALUE!
+846,table lamp,電気スタンド,,,#VALUE!
+847,"tank, army tank, armored combat vehicle, armoured combat vehicle",タンク、陸軍戦車、装甲戦闘車両、装甲戦闘車両,,,#VALUE!
+848,tape player,テーププレーヤー,,,#VALUE!
+849,teapot,ティーポット,,,#VALUE!
+850,"teddy, teddy bear",テディ、テディベア,,,#VALUE!
+851,"television, television system",テレビ、テレビシステム,,,#VALUE!
+852,tennis ball,テニスボール,,,#VALUE!
+853,"thatch, thatched roof",thatき、thatき屋根,,,#VALUE!
+854,"theater curtain, theatre curtain",劇場のカーテン、劇場のカーテン,,,#VALUE!
+855,thimble,指見,,,#VALUE!
+856,"thresher, thrasher, threshing machine",脱穀機、スラッシャー、脱穀機,,,#VALUE!
+857,throne,王位,,,#VALUE!
+858,tile roof,タイル屋根,,,#VALUE!
+859,toaster,トースター,,,#VALUE!
+860,"tobacco shop, tobacconist shop, tobacconist",Tobacco Shop、Tobacconist Shop、Tobacconist,,,#VALUE!
+861,toilet seat,便座,,,#VALUE!
+862,torch,松明,,,#VALUE!
+863,totem pole,トーテムポール,,,#VALUE!
+864,"tow truck, tow car, wrecker",レッカートラック、レッカー車、レッカー,,,#VALUE!
+865,toyshop,玩具屋,,,#VALUE!
+866,tractor,トラクター,,,#VALUE!
+867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",トレーラートラック、トラクタートレーラー、トラックリグ、リグ、関節トラック、セミ,,,#VALUE!
+868,tray,トレイ,,,#VALUE!
+869,trench coat,トレンチコート,,,#VALUE!
+870,"tricycle, trike, velocipede",三輪車、トライク、ベロシペデ,,,#VALUE!
+871,trimaran,トリマラン,,,#VALUE!
+872,tripod,三脚,,,#VALUE!
+873,triumphal arch,凱旋門,,,#VALUE!
+874,"trolleybus, trolley coach, trackless trolley",トロリーバス、トロリーコーチ、トラックレストロリー,,,#VALUE!
+875,trombone,トロンボーン,,,#VALUE!
+876,"tub, vat",浴槽、ヴァット,,,#VALUE!
+877,turnstile,ターンスタイル,,,#VALUE!
+878,typewriter keyboard,タイプライターキーボード,,,#VALUE!
+879,umbrella,傘,,,#VALUE!
+880,"unicycle, monocycle",一輪車、モノサイクル,,,#VALUE!
+881,"upright, upright piano",直立した、直立したピアノ,,,#VALUE!
+882,"vacuum, vacuum cleaner",真空、掃除機,,,#VALUE!
+883,vase,花瓶,,,#VALUE!
+884,vault,ボールト,,,#VALUE!
+885,velvet,ベルベット,,,#VALUE!
+886,vending machine,自動販売機,,,#VALUE!
+887,vestment,ベスト,,,#VALUE!
+888,viaduct,高架橋,,,#VALUE!
+889,"violin, fiddle",バイオリン、フィドル,,,#VALUE!
+890,volleyball,バレーボール,,,#VALUE!
+891,waffle iron,ワッフル焼き型,,,#VALUE!
+892,wall clock,壁時計,,,#VALUE!
+893,"wallet, billfold, notecase, pocketbook",ウォレット、ビルフォールド、ノートケース、ポケットブック,,,#VALUE!
+894,"wardrobe, closet, press",ワードローブ、クローゼット、プレス,,,#VALUE!
+895,"warplane, military plane",軍用機、軍用機,,,#VALUE!
+896,"washbasin, handbasin, washbowl, lavabo, wash-hand basin",ウォッシュベイシン、ハンドベシン、ウォッシュボウル、ラバボ、ウォッシュハンドベースン,,,#VALUE!
+897,"washer, automatic washer, washing machine",洗濯機、自動洗濯機、洗濯機,,,#VALUE!
+898,water bottle,ウォーターボトル,,,#VALUE!
+899,water jug,水差し,,,#VALUE!
+900,water tower,給水塔,,,#VALUE!
+901,whiskey jug,ウイスキー水差し,,,#VALUE!
+902,whistle,ホイッスル,,,#VALUE!
+903,wig,かつら,,,#VALUE!
+904,window screen,ウインドウスクリーン,,,#VALUE!
+905,window shade,ウィンドウシェード,,,#VALUE!
+906,Windsor tie,ウィンザータイ,,,#VALUE!
+907,wine bottle,ワインボトル,,,#VALUE!
+908,wing,羽,,,#VALUE!
+909,wok,中華鍋,,,#VALUE!
+910,wooden spoon,木製スプーン,,,#VALUE!
+911,"wool, woolen, woollen",ウール、ウール、ウール,,,#VALUE!
+912,"worm fence, snake fence, snake-rail fence, Virginia fence",ワームフェンス、ヘビフェンス、ヘビレールフェンス、バージニアフェンス,,,#VALUE!
+913,wreck,難破船,,,#VALUE!
+914,yawl,ヨール,,,#VALUE!
+915,yurt,パオ,,,#VALUE!
+916,"web site, website, internet site, site",ウェブサイト、ウェブサイト、インターネットサイト、サイト,,,#VALUE!
+917,comic book,コミックブック,,,#VALUE!
+918,"crossword puzzle, crossword",クロスワードパズル、クロスワード,,,#VALUE!
+919,street sign,ストリートサイン,,,#VALUE!
+920,"traffic light, traffic signal, stoplight",信号、信号機、ストップライト,,,#VALUE!
+921,"book jacket, dust cover, dust jacket, dust wrapper",ブックジャケット、ダストカバー、ダストジャケット、ダストラッパー,,,#VALUE!
+922,menu,メニュー,,,#VALUE!
+923,plate,皿,,,#VALUE!
+924,guacamole,グアカモーレ,,,#VALUE!
+925,consomme,コンソメ,,,#VALUE!
+926,"hot pot, hotpot",ホットポット、ホットポット,,,#VALUE!
+927,trifle,ささいな,,,#VALUE!
+928,"ice cream, icecream",アイスクリーム、アイスクリーム,,,#VALUE!
+929,"ice lolly, lolly, lollipop, popsicle",アイスロリー、ロリー、ロリポップ、ポップシクル,,,#VALUE!
+930,French loaf,フランスのパン,,,#VALUE!
+931,"bagel, beigel",ベーゲル、ベイゲル,,,#VALUE!
+932,pretzel,プレッツェル,,,#VALUE!
+933,cheeseburger,チーズバーガー,,,#VALUE!
+934,"hotdog, hot dog, red hot",ホットドッグ、ホットドッグ、レッドホット,,,#VALUE!
+935,mashed potato,マッシュポテト,,,#VALUE!
+936,head cabbage,ヘッドキャベツ,,,#VALUE!
+937,broccoli,ブロッコリ,,,#VALUE!
+938,cauliflower,カリフラワー,,,#VALUE!
+939,"zucchini, courgette",ズッキーニ、ズッキーニ,,,#VALUE!
+940,spaghetti squash,スパゲッティスカッシュ,,,#VALUE!
+941,acorn squash,どんぐりかぼちゃ,,,#VALUE!
+942,butternut squash,バターナットスカッシュ,,,#VALUE!
+943,"cucumber, cuke",キュウリ、キューク,,,#VALUE!
+944,"artichoke, globe artichoke",アーティチョーク、グローブアーティチョーク,,,#VALUE!
+945,bell pepper,ピーマン,,,#VALUE!
+946,cardoon,カルドゥーン,,,#VALUE!
+947,mushroom,キノコ,,,#VALUE!
+948,Granny Smith,グラニースミス,,,#VALUE!
+949,strawberry,いちご,,,#VALUE!
+950,orange,オレンジ,,,#VALUE!
+951,lemon,レモン,,,#VALUE!
+952,fig,図,,,#VALUE!
+953,"pineapple, ananas",パイナップル、アナナ,,,#VALUE!
+954,banana,バナナ,,,#VALUE!
+955,"jackfruit, jak, jack",ジャックフルーツ、ジャク、ジャック,,,#VALUE!
+956,custard apple,カスタードアップル,,,#VALUE!
+957,pomegranate,ザクロ,,,#VALUE!
+958,hay,干し草,,,#VALUE!
+959,carbonara,カーボナーラ,,,#VALUE!
+960,"chocolate sauce, chocolate syrup",チョコレートソース、チョコレートシロップ,,,#VALUE!
+961,dough,生地,,,#VALUE!
+962,"meat loaf, meatloaf",ミートローフ、ミートローフ,,,#VALUE!
+963,"pizza, pizza pie",ピザ、ピザパイ,,,#VALUE!
+964,potpie,ポッピー,,,#VALUE!
+965,burrito,ブリトー,,,#VALUE!
+966,red wine,赤ワイン,,,#VALUE!
+967,espresso,エスプレッソ,,,#VALUE!
+968,cup,カップ,,,#VALUE!
+969,eggnog,エッグノッグ,,,#VALUE!
+970,alp,ALP,,,#VALUE!
+971,bubble,バブル,,,#VALUE!
+972,"cliff, drop, drop-off",クリフ、ドロップ、ドロップオフ,,,#VALUE!
+973,coral reef,サンゴ礁,,,#VALUE!
+974,geyser,ガイザー,,,#VALUE!
+975,"lakeside, lakeshore",湖side、湖shore,,,#VALUE!
+976,"promontory, headland, head, foreland",岬、岬、校長、前地,,,#VALUE!
+977,"sandbar, sand bar",サンドバー、サンドバー,,,#VALUE!
+978,"seashore, coast, seacoast, sea-coast",海岸、海岸、海岸、海岸,,,#VALUE!
+979,"valley, vale",バレー、谷,,,#VALUE!
+980,volcano,火山,,,#VALUE!
+981,"ballplayer, baseball player",ボールプレイヤー、野球選手,,,#VALUE!
+982,"groom, bridegroom",新郎、花g,,,#VALUE!
+983,scuba diver,スキューバダイバー,,,#VALUE!
+984,rapeseed,菜種,,,#VALUE!
+985,daisy,デイジー,,,#VALUE!
+986,"yellow lady\'s slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",イエローレディのスリッパ、イエローレディスリッパー、カルセオラス、キプロシウムparviflorum,,,#VALUE!
+987,corn,コーン,,,#VALUE!
+988,acorn,ドングリ,,,#VALUE!
+989,"hip, rose hip, rosehip",ヒップ、バラの腰、バラのヒップ,,,#VALUE!
+990,"buckeye, horse chestnut, conker",バックアイ、馬の栗、コンカー,,,#VALUE!
+991,coral fungus,サンゴ菌,,,#VALUE!
+992,agaric,アガリック,,,#VALUE!
+993,gyromitra,ジャイロミトラ,,,#VALUE!
+994,"stinkhorn, carrion fungus",スティンクホーン、腐肉菌,,,#VALUE!
+995,earthstar,アーススター,,,#VALUE!
+996,"hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa",鶏の鶏、森の鶏、ポリポラス・フロンドソス、グリフォラ・フロンドサ,,,#VALUE!
+997,bolete,ボレテ,,,#VALUE!
+998,"ear, spike, capitulum",耳、スパイク、カピトゥラム,,,#VALUE!
+999,"toilet tissue, toilet paper, bathroom tissue",トイレティッシュ、トイレットペーパー、バスルームティッシュ,,,#VALUE!

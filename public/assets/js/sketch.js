@@ -26,21 +26,26 @@ let img;
 let foundLabel;
 let classifier;
 let includeLabel = false;
+// let hitPieces = [];
 
 const classes = ["acoustic guitar", "airship", "ambulance", "analog clock", "bakery, bakeshop, bakehouse", "balloon", "ballpoint, ballpoint pen, ballpen, Biro", "Band Aid", "baseball", "basketball", "birdhouse", "boathouse", "bookshop, bookstore, bookstall", "bottlecap", "broom", "bullet train, bullet", "butcher shop, meat market", "candle, taper, wax light", "canoe", "castle", "chain", "china cabinet, china closet"];
+let table;
 
 const test_subjects = ["ballpoint", "analog clock", "balloon", "birdhouse", "boathouse", "bookshop", "bottlecap", "canoe", "castle"];
 
 function preload() {
-  // let url = "./IMAGENET_CLASSES.json";
-  // classes = loadJSON(url);
-  
+  const url = "assets/MOBILENET_CLASSES.csv";
+  table = loadTable(url, 'csv', 'header');
+  // console.table(table);
 }
 
 function setup() {
   // スマホ・PC判定
   // TODO: NavigatorUADataがSafariでも使えるようになったらいいね
   console.log(`isMobile: ${isMobile()}`);
+  
+  let row = table.findRow("cock", "class");
+  console.log(`hoge: ${row.getString("class_translate_ja")}, ${row.getString("format_ja")}`)
   
   noCanvas();
 	
@@ -121,23 +126,9 @@ function flipCamera() {
   // stopCapture();
   capture.remove();
   if(facingUser) {
-   constraints = {
-     video: {
-         facingMode: {
-          exact: 'user'
-        }
-     },
-     audio: false
-   };
+   constraints = userConstraints;
   } else {
-   constraints = {
-     video: {
-         facingMode: {
-          exact: 'environment'
-        }
-     },
-     audio: false
-   };
+   constraints = envConstraints;
   }
   capture = createCapture(constraints);
   capture.hide();
@@ -164,20 +155,16 @@ function gotResult(error, results) {
   if (error) {
     console.error(error);
   }
-  foundLabel = split(results[0].label, ',')[0];
   // The results are in an array ordered by confidence.
+  console.log(results[0].label);
+  foundLabel = split(results[0].label, ',')[0];
+  
   pictureWindow.showResults(results);
   
   capture = createCapture(constraints);
   capture.hide();
   
-  includeLabel = false;
-  pieces.forEach(piece => {
-    if(piece.word == foundLabel) {
-        piece.picture = img;
-        includeLabel = true;
-      }
-  });
+  includeLabel = pieces.some(piece => piece.word == foundLabel);
   
   select(".modal-title").html(`You found ${foundLabel}`);
 	select("#confidenceText").html(`Confidence: ${nf(pictureWindow.results[0].confidence, 0, 2)}`);
@@ -199,6 +186,12 @@ function gotResult(error, results) {
       resultText.html("Bingo!");
     }
   });
+}
+
+function setPicture() {
+  console.log("setPicture");
+  const hitPieces = pieces.filter(piece => piece.word == foundLabel);
+  hitPieces.forEach(piece => piece.picture = img);
 }
 
 function setModalImage() {
@@ -274,17 +267,13 @@ class PictureWindow {
   }
   
   display() {
-    // image(capture, this.x + 6, this.y + 6, this.width - 12, this.width-12, 80, 0, this.capture.size().width*2, this.capture.size().height*2);
-    this.setDisplayPos();
+    // this.setDisplayPos();
     this.canvas.image(capture, 0, 0);
     // this.canvas.image(capture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dHeight);
-    // this.canvas.image(capture, this.x, this.y, this.width, this.width, this.posX, this.posY, this.dWidth, this.dHeight);
-    // this.canvas.image(capture, 0, 0);
   }
   
   setDisplayPos() {
     this.dWidth = min(capture.width, capture.height);
-    // this.dHeight = dWidth * capture.width / capture.height
     let diffWidthHeight = abs(capture.width - capture.height)/2;
     this.posX = (capture.width > capture.height) ? diffWidthHeight : 0;
     this.posY = (capture.width < capture.height) ? diffWidthHeight : 0;
