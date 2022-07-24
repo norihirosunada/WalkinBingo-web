@@ -30,12 +30,12 @@ let includeLabel = false;
 
 const classes = ["acoustic guitar", "airship", "ambulance", "analog clock", "bakery, bakeshop, bakehouse", "balloon", "ballpoint, ballpoint pen, ballpen, Biro", "Band Aid", "baseball", "basketball", "birdhouse", "boathouse", "bookshop, bookstore, bookstall", "bottlecap", "broom", "bullet train, bullet", "butcher shop, meat market", "candle, taper, wax light", "canoe", "castle", "chain", "china cabinet, china closet"];
 let table;
-
+let subjects;
 const test_subjects = ["ballpoint", "analog clock", "balloon", "birdhouse", "boathouse", "bookshop", "bottlecap", "canoe", "castle"];
 
 function preload() {
-  const url = "assets/MOBILENET_CLASSES.csv";
-  table = loadTable(url, 'csv', 'header');
+  table = loadTable("/assets/MOBILENET_CLASSES.csv", "csv", "header");
+  subjects = loadTable("/assets/SUBJECTS.csv", "csv", "header");
   // console.table(table);
 }
 
@@ -44,13 +44,20 @@ function setup() {
   // TODO: NavigatorUADataがSafariでも使えるようになったらいいね
   console.log(`isMobile: ${isMobile()}`);
   
-  let row = table.findRow("cock", "class");
-  console.log(`hoge: ${row.getString("class_translate_ja")}, ${row.getString("format_ja")}`)
-  
   noCanvas();
-	
-  // let size = bingoCard.width/3;
   
+  // ビンゴカード準備
+  randomSeed(99);
+  let allSubs = subjects.getColumn("subject")
+  let subs = [...Array(subjects.getRowCount())].map((_, i) => i);
+  for (let i = 0; i < subs.length; i++) {
+    let tmp = floor(random(subs.length));
+    let swp = subs[i];
+    subs[i] = subs[tmp];
+    subs[tmp] = swp;
+  }
+  const subjectsToday = subs.slice(0,9).map(num => allSubs[num]);
+  console.log(subjectsToday);
   for(let i=0; i < pieces.length; i++) {
     const boxDiv = select("#box"+i);
   	let box = createGraphics(boxDiv.width, boxDiv.height);
@@ -91,11 +98,6 @@ function setup() {
   if (isMobile) {
     flipButton.removeAttribute("disabled");
   }
-  
-  // classifyResultModal = select("#classifyResultModal");
-  // classifyResultModal.shown.bs.modal(function() {
-		// 	console.log("modal shown hoge");
-		// });
 }
 
 function draw() {
