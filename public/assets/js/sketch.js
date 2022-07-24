@@ -217,15 +217,15 @@ class Piece {
     this.bg.rect(4, 4, this.bg.width-8, this.bg.height-8);
     
     this.canvas.textAlign(CENTER);
+    this.canvas.imageMode(CENTER);
+    this.canvas.translate(this.width/2, this.height/2);
   }
   
   display() {
-    // this.canvas.image(this.bg, this.x, this.y, this.width, this.height);
-    
     if(this.picture) {
-      this.canvas.image(this.picture, this.x, this.y, 200, 200, this.posX, this.posY, this.dWidth, this.dWidth);
+      this.canvas.image(this.picture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dWidth);
     }
-    this.canvas.text(this.isCenter ? "?" : this.word, this.x + this.width/2, this.y + this.height/2);
+    this.canvas.text(this.isCenter ? "?" : this.word, 0, 0);
   }
   
   get picture() {
