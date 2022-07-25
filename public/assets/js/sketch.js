@@ -49,7 +49,8 @@ function setup() {
   noCanvas();
   
   // ビンゴカード準備
-  randomSeed(99);
+  const today = new Date();
+  randomSeed(`${today.getFullYear()}${today.getMonth()}${today.getDate()}`);
   let allSubs = subjects.getColumn("subject")
   let subs = [...Array(subjects.getRowCount())].map((_, i) => i);
   for (let i = 0; i < subs.length; i++) {
