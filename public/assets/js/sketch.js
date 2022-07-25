@@ -185,20 +185,6 @@ function gotResult(error, results) {
 		// select("#includeLabelText").removeClass("d-none");
 		select("#okButton").addClass("d-none");
 	}
-  
-  // ビンゴ判定
-  // 各ビンゴパターンチェック
-  lines.forEach((indices, bingoIndex) => {
-    // ビンゴマス取得
-    const line = pieces.filter((_, index) => indices.includes(index));
-    if(line.every(piece => piece.picture !== undefined)) {
-      console.log("Bingo"+indices);
-      bingoFlag[bingoIndex] = true;
-      resultText.html("Bingo!");
-      // let bingo = select("#bingo");
-      // bingo.removeClass("invisible");
-    }
-  });
 }
 
 function setPicture() {
@@ -212,6 +198,22 @@ function setModalImage() {
   let modalImageGraphic = createGraphics(modalImage.width, modalImage.height);
   modalImageGraphic.parent(modalImage);
   modalImageGraphic.Image(img);
+}
+
+function checkBingo() {
+  // ビンゴ判定
+  // 各ビンゴパターンチェック
+  lines.forEach((indices, bingoIndex) => {
+    // ビンゴマス取得
+    const line = pieces.filter((_, index) => indices.includes(index));
+    if(line.every(piece => piece.picture !== undefined)) {
+      console.log("Bingo"+indices);
+      bingoFlag[bingoIndex] = true;
+      resultText.html("Bingo!");
+      // let bingo = select("#bingo");
+      // bingo.removeClass("invisible");
+    }
+  });
 }
 
 class Piece {
