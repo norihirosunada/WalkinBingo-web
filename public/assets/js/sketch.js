@@ -149,9 +149,12 @@ function classifyVideo() {
   // let pWidth = min(capture.size().width, capture.size().height);
   // let posX = (capture.size().width - pWidth) / 2;
   // img = capture.get(posX, 0, pWidth, pWidth);
-  img = capture.get();
-  
-  classifier.classify(gotResult,1);
+  // console.log(`loadedm`)
+  if(capture.loadedmetadata) {
+    // img = capture.get();
+    // pictureWindow.loadPixels();
+    classifier.classify(gotResult,1);
+  }
 }
 
 function gotResult(error, results) {
@@ -167,10 +170,14 @@ function gotResult(error, results) {
   console.log(foundLabel);
   let confidence = round(results[0].confidence * 100);
   
-  pictureWindow.showResults(results);
+  // pictureWindow.showResults(results);
   
-  capture = createCapture(constraints);
-  capture.hide();
+  // capture = createCapture(constraints);
+  // capture.hide();
+  // for (let i = 0; i < 500; i++) {
+  //   pixels[i + 500] = pixels[i];
+  // }
+  // updatePixels();
   
   includeLabel = pieces.some(piece => piece.word == foundLabel);
   
