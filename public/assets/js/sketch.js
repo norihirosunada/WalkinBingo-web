@@ -92,8 +92,8 @@ function setup() {
   const flipButton = select("#flipButton");
   flipButton.mousePressed(flipCamera);
   
-  const shutterButton = select("#shutterButton");
-  shutterButton.mousePressed(pictureWindow.getPicture);
+  // const shutterButton = select("#shutterButton");
+  // shutterButton.mousePressed(pictureWindow.getPicture);
   
   resultText = select("#resultText");
   scoreText = select("#scoreText");
@@ -152,7 +152,6 @@ function classifyVideo() {
   // console.log(`loadedm`)
   if(capture.loadedmetadata) {
     // img = capture.get();
-    // pictureWindow.loadPixels();
     classifier.classify(gotResult,1);
   }
 }
@@ -172,13 +171,6 @@ function gotResult(error, results) {
   
   // pictureWindow.showResults(results);
   
-  // capture = createCapture(constraints);
-  // capture.hide();
-  // for (let i = 0; i < 500; i++) {
-  //   pixels[i + 500] = pixels[i];
-  // }
-  // updatePixels();
-  
   includeLabel = pieces.some(piece => piece.word == foundLabel);
   
   // select(".modal-title").html(`You found ${foundLabel_ja}`);
@@ -195,10 +187,20 @@ function gotResult(error, results) {
 	}
 }
 
-function setPicture() {
+function setPicture(promise) {
   console.log("setPicture");
-  const hitPieces = pieces.filter(piece => piece.word == foundLabel);
-  hitPieces.forEach(piece => piece.picture = img);
+  const captureCtx = pictureWindow.canvas.drawingContext;
+  
+  promise.then(
+    function success(imageBitmap) {
+      const hitPieces = pieces.filter(piece => piece.word == foundLabel);
+      hitPieces.forEach(piece => piece.picture = imageBitmap);
+    },
+    function failure(event) {
+      console.warn("Fail: setPicture(), Event: " + event);
+    }
+  );
+  
 }
 
 function setModalImage() {
@@ -245,7 +247,7 @@ class Piece {
   
   display() {
     if(this.picture) {
-      this.canvas.image(this.picture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dWidth);
+      // this.canvas.image(this.picture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dWidth);
     }
     this.canvas.text(this.isCenter ? "?" : this.word, 0, 0);
   }
@@ -260,6 +262,8 @@ class Piece {
     let diffWidthHeight = abs(pic.width - pic.height);
     this.posX = (pic.width > pic.height) ? diffWidthHeight/2 : 0;
     this.posY = (pic.width < pic.height) ? diffWidthHeight/2 : 0;
+    let ctx = this.canvas.drawingContext;
+    ctx.drawImage(pic, -this.width/2, -this.height/2, this.width, this.height);
   }
   
   found(label) {
@@ -285,45 +289,57 @@ class PictureWindow {
     this.canvas.imageMode(CENTER);
     this.canvas.translate(this.width/2, this.height/2);
     this.canvas.rectMode(CENTER);
+    this.canvas.id("pictureWindow");
     
     this.sqSize = this.width/4;
     this.dSize = 0;
     this.a = 0;
+    
+    // スキャン中
+    this.scaning = true;
   }
   
   display() {
     // this.setDisplayPos();
-    this.canvas.image(capture, 0, 0);
+    
     // this.canvas.image(capture, 0, 0, this.width, this.height, this.posX, this.posY, this.dWidth, this.dHeight);
     
-    // インジケータ　収縮する角丸枠
-    this.a += 0.02;
-    this.dSize = 16 * sin(this.a);
-    push();
-    this.canvas.noFill()
-    this.canvas.stroke(240);
-    this.canvas.strokeWeight(6);
-    // 右下
-    this.canvas.beginShape();
-    this.canvas.vertex(this.sqSize + this.dSize, this.sqSize + this.dSize - 40);
-    this.canvas.quadraticVertex(this.sqSize + this.dSize, this.sqSize + this.dSize, this.sqSize + this.dSize - 40, this.sqSize + this.dSize);
-    this.canvas.endShape();
-    // 左下
-    this.canvas.beginShape();
-    this.canvas.vertex(-this.sqSize - this.dSize, this.sqSize + this.dSize - 40);
-    this.canvas.quadraticVertex(-this.sqSize - this.dSize, this.sqSize + this.dSize, -this.sqSize - this.dSize + 40, this.sqSize + this.dSize);
-    this.canvas.endShape();
-    // 左上
-    this.canvas.beginShape();
-    this.canvas.vertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize + 40);
-    this.canvas.quadraticVertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize, -this.sqSize - this.dSize + 40, -this.sqSize - this.dSize);
-    this.canvas.endShape();
-    // 右上
-    this.canvas.beginShape();
-    this.canvas.vertex(this.sqSize + this.dSize, -this.sqSize - this.dSize + 40);
-    this.canvas.quadraticVertex(this.sqSize + this.dSize, -this.sqSize - this.dSize, this.sqSize + this.dSize - 40, -this.sqSize - this.dSize);
-    this.canvas.endShape();
-    pop();
+    if(this.scaning) {
+      this.canvas.image(capture, 0, 0);
+      // インジケータ　収縮する角丸枠
+      this.a += 0.02;
+      this.dSize = 16 * sin(this.a);
+      push();
+      this.canvas.noFill()
+      this.canvas.stroke(240);
+      this.canvas.strokeWeight(6);
+      // 右下
+      this.canvas.beginShape();
+      this.canvas.vertex(this.sqSize + this.dSize, this.sqSize + this.dSize - 40);
+      this.canvas.quadraticVertex(this.sqSize + this.dSize, this.sqSize + this.dSize, this.sqSize + this.dSize - 40, this.sqSize + this.dSize);
+      this.canvas.endShape();
+      // 左下
+      this.canvas.beginShape();
+      this.canvas.vertex(-this.sqSize - this.dSize, this.sqSize + this.dSize - 40);
+      this.canvas.quadraticVertex(-this.sqSize - this.dSize, this.sqSize + this.dSize, -this.sqSize - this.dSize + 40, this.sqSize + this.dSize);
+      this.canvas.endShape();
+      // 左上
+      this.canvas.beginShape();
+      this.canvas.vertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize + 40);
+      this.canvas.quadraticVertex(-this.sqSize - this.dSize, -this.sqSize - this.dSize, -this.sqSize - this.dSize + 40, -this.sqSize - this.dSize);
+      this.canvas.endShape();
+      // 右上
+      this.canvas.beginShape();
+      this.canvas.vertex(this.sqSize + this.dSize, -this.sqSize - this.dSize + 40);
+      this.canvas.quadraticVertex(this.sqSize + this.dSize, -this.sqSize - this.dSize, this.sqSize + this.dSize - 40, -this.sqSize - this.dSize);
+      this.canvas.endShape();
+      pop();
+    } else {
+      if(this.once) {
+        this.canvas.image(capture, 0, 0);
+        this.once = false;
+      }
+    }
   }
   
   setDisplayPos() {
@@ -334,6 +350,8 @@ class PictureWindow {
   }
   
   getPicture() {
+    this.scaning = false;
+    this.once = true;
     classifyVideo();
   }
   
@@ -345,8 +363,8 @@ class PictureWindow {
     this.found = `you found ${split(results[0].label, ',')[0]}`;
   }
   
-  indicator(){
-    
+  startScaning(){
+    this.scaning = true;
   }
 }
 

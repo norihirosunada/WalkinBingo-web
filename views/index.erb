@@ -133,18 +133,27 @@
 
 	<script src="/assets/js/sketch.js"></script>
 	<script>
+		// カメラ関連ボタン
+		$("#shutterButton").on("click", function() {
+			pictureWindow.getPicture();
+		});
 		// モーダル
-		let myModal = document.getElementById('classifyResultModal')
+		// Bootstrapだからかイベントリスナー紐付けが標準の記法
+		let myModal = document.getElementById('classifyResultModal');
 		myModal.addEventListener('shown.bs.modal',  function() {
 			console.log("modal shown");
-			// console.log(pictureWindow.results);
+		});
+		myModal.addEventListener('hidden.bs.modal',  function() {
+			console.log("modal hidden");
+			pictureWindow.startScaning();
 		});
 		$("#okButton").on('click', function(event) {
 			event.preventDefault();
 			let modal = bootstrap.Modal.getInstance(myModal);
+			let promise = window.createImageBitmap(document.getElementById("pictureWindow"));
 			modal.hide();
 			setTimeout(() => {location.href = "#bingoDiv"}, 500);
-			setTimeout(() => {setPicture()}, 1000);
+			setTimeout(() => {setPicture(promise)}, 1000);
 			setTimeout(() => {checkBingo()}, 1200);
 		});
 		// シェア機能
